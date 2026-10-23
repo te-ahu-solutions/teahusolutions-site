@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Melanie Sweet | Te Ahu Solutions</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Melanie Sweet, founder of Te Ahu Solutions: almost forty years leading change across industry, government, iwi, hapū and community.">
+<link rel="canonical" href="https://teahusolutions.com/melanie.html">
+<meta name="theme-color" content="#16273F">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Public+Sans:wght@400;500;600&display=swap">
+<style>
+/* Te Ahu Solutions. Layout: navy header, photographic hero, then alternating white and Cloud bands, navy close. Brand book v1.2. */
+:root{
+  --navy:#16273F; --navy-deep:#101D30; --graphite:#3D424A; --steel:#8FA3BA; --cloud:#EFF2F6; --white:#FFFFFF;
+  --ahu-gold:#C39F47; --ahu-charcoal:#424741; --ahu-alabaster:#F6F5ED;
+  --display:"Source Serif 4", Georgia, serif;
+  --body:"Public Sans", "Segoe UI", Arial, sans-serif;
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--white);color:var(--graphite);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--navy)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--steel);outline-offset:3px}
+h1,h2,h3{font-family:var(--display);color:var(--navy);font-weight:600;margin:0;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#5E7590}
+.skip{position:absolute;left:-999px;top:0;background:#fff;color:var(--navy);padding:10px 14px;z-index:100}
+.skip:focus{left:12px;top:12px}
+
+/* header */
+header.site{position:sticky;top:0;z-index:50;background:var(--navy);padding-top:env(safe-area-inset-top,0px)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:72px}
+header.site .logo img{height:54px;width:auto}
+nav.main{display:flex;gap:28px}
+nav.main a{color:#E4EAF1;text-decoration:none;font-size:15px;font-weight:500}
+nav.main a:hover{color:#fff;text-decoration:underline;text-underline-offset:5px}
+.menu-btn{display:none;background:none;border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:4px;padding:8px 12px;font:500 14px var(--body);cursor:pointer}
+
+/* hero */
+.hero{position:relative;background:var(--navy) url("assets/hero-harbour-2400.jpg") center 58%/cover no-repeat;color:#fff}
+@media (max-width:900px){.hero{background-image:url("assets/hero-harbour-1200.jpg")}}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(16,29,48,.92) 0%,rgba(16,29,48,.78) 42%,rgba(16,29,48,.25) 75%,rgba(16,29,48,.1) 100%)}
+.hero .wrap{position:relative;padding-block:clamp(88px,14vw,168px) clamp(80px,11vw,140px)}
+.hero .eyebrow{color:#B9C8D8}
+.hero h1{color:#fff;font-size:clamp(36px,5.6vw,62px);line-height:1.08;max-width:15ch;margin:16px 0 22px}
+.hero p.lead{font-size:clamp(18px,2vw,21px);max-width:44ch;color:#DCE4EC}
+.btn{display:inline-block;margin-top:34px;background:#fff;color:var(--navy);text-decoration:none;font-weight:600;font-size:16px;padding:14px 24px;border-radius:3px}
+.btn:hover{background:var(--cloud)}
+.btn.dark{background:var(--navy);color:#fff}
+.btn.dark:hover{background:var(--navy-deep)}
+
+/* sections */
+section{padding-block:clamp(64px,9vw,112px)}
+.cloud{background:var(--cloud)}
+.kaupapa .statement{font-family:var(--display);font-size:clamp(28px,3.8vw,44px);line-height:1.25;color:var(--navy);max-width:24ch;margin:18px 0 26px}
+.kaupapa p.body{max-width:58ch;font-size:18px}
+
+.services .head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:end;margin-bottom:48px}
+.services h2{font-size:clamp(30px,3.6vw,42px);margin-top:12px}
+.services .head p{max-width:46ch}
+.svc-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px}
+.svc{border-top:2px solid var(--steel);padding-top:20px;display:grid;gap:10px;align-content:start;min-width:0}
+.svc h3{font-size:22px;line-height:1.25}
+.svc p{font-size:16px}
+.approach-line{margin-top:44px;display:flex;flex-wrap:wrap;gap:10px 28px;align-items:baseline;border-top:1px solid #DCE3EA;padding-top:24px}
+.approach-line b{font-family:var(--display);font-size:22px;color:var(--navy);font-weight:600}
+
+.photo-band{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:56px;align-items:center}
+.photo-band img{width:100%;border-radius:4px;aspect-ratio:4/3;object-fit:cover}
+.veil{position:relative;border-radius:4px;overflow:hidden}
+.veil img{border-radius:0;filter:saturate(.8) brightness(.94)}
+.veil::after{content:"";position:absolute;inset:0;background:rgba(22,39,63,.26);pointer-events:none}
+.principles{display:grid;gap:26px;margin-top:26px}
+.principles div{display:grid;gap:6px}
+.principles h3{font-size:21px}
+.photo-band h2{font-size:clamp(28px,3.4vw,40px);margin-top:12px}
+
+.about{display:grid;grid-template-columns:260px minmax(0,1fr);gap:56px;align-items:start}
+.about img{width:100%;max-width:260px;border-radius:4px;aspect-ratio:4/5;object-fit:cover}
+.about h2{font-size:clamp(28px,3.4vw,40px);margin:12px 0 20px}
+.about .prose{display:grid;gap:16px;max-width:62ch}
+
+/* AHU doorway: its own palette */
+.doorway{background:var(--ahu-alabaster);border:1px solid #E3E0D3;border-radius:6px;display:grid;grid-template-columns:240px minmax(0,1fr) auto;gap:40px;align-items:center;padding:clamp(28px,4vw,44px)}
+.doorway img{width:100%;max-width:240px}
+.doorway .eyebrow{color:#8A7234}
+.doorway p{color:var(--ahu-charcoal);max-width:46ch;margin-top:8px}
+.doorway a{display:inline-block;color:var(--ahu-charcoal);border:1px solid var(--ahu-charcoal);padding:12px 20px;border-radius:3px;text-decoration:none;font-weight:600;white-space:nowrap}
+.doorway a:hover{background:var(--ahu-charcoal);color:var(--ahu-alabaster)}
+
+/* contact */
+.contact{background:var(--navy);color:#DCE4EC}
+.contact .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:48px;align-items:end}
+.contact h2{color:#fff;font-size:clamp(32px,4.4vw,50px);margin:12px 0 18px}
+.contact .eyebrow{color:#B9C8D8}
+.contact .email{font-family:var(--display);font-size:clamp(20px,2.4vw,26px);color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4);word-break:break-word}
+.contact .email:hover{border-bottom-color:#fff}
+.contact .where{margin-top:14px;font-size:15px;color:#B9C8D8}
+
+footer{background:var(--navy-deep);color:#9DAEC2;font-size:14px;padding-bottom:env(safe-area-inset-bottom,0px)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:18px 32px;align-items:center;justify-content:space-between;padding-block:28px}
+footer img{height:34px;width:auto}
+footer a{color:#C9D4E0}
+
+@media (max-width:980px){
+  .svc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .services .head,.photo-band,.contact .wrap{grid-template-columns:1fr;gap:28px}
+  .doorway{grid-template-columns:1fr;gap:20px}
+}
+@media (max-width:760px){
+  nav.main{display:none;position:absolute;left:0;right:0;top:72px;background:var(--navy);flex-direction:column;gap:0;padding:8px max(20px,env(safe-area-inset-left,0px)) 16px}
+  nav.main.open{display:flex}
+  nav.main a{padding:12px 0;border-top:1px solid rgba(255,255,255,.12)}
+  .menu-btn{display:block}
+  .about{grid-template-columns:1fr;gap:28px}
+  .svc-grid{grid-template-columns:1fr}
+}
+
+mark.confirm{background:#F6E3A8;color:inherit;padding:0 3px;border-radius:2px;box-shadow:inset 0 -2px 0 #C9A13D}
+.review{background:#F6E3A8;border-bottom:1px solid #C9A13D;font-size:14px;color:#4A3B12}
+.review .wrap{padding-block:10px}
+footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
+.m-intro{padding-block:clamp(56px,8vw,96px) clamp(40px,6vw,64px)}
+.m-intro .wrap{display:grid;grid-template-columns:280px minmax(0,1fr);gap:56px;align-items:center}
+.m-intro img{width:100%;max-width:280px;border-radius:4px;aspect-ratio:4/5;object-fit:cover}
+.m-intro h1{font-size:clamp(40px,5.6vw,64px);line-height:1.05;margin:12px 0 14px}
+.m-intro .line{font-family:var(--display);font-size:clamp(22px,2.6vw,30px);line-height:1.3;color:var(--navy);margin:0 0 22px;max-width:none}
+.m-intro .lead{max-width:60ch}
+.m-intro .lead p+p{margin-top:14px}
+.pepeha{background:var(--navy);color:#E6ECF2}
+.pepeha .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:48px;align-items:center}
+.pepeha .eyebrow{color:#B9C8D8}
+.pepeha h2{color:#fff;font-size:clamp(44px,6vw,72px);line-height:1.05}
+.pepeha .kaupapa-line{font-family:var(--display);font-size:clamp(21px,2.3vw,26px);line-height:1.4;color:#fff;margin:22px 0 0;max-width:22ch}
+.pepeha .en{margin:10px 0 0;color:#B9C8D8;font-size:16px}
+.pepeha .note{margin-top:14px;color:#B9C8D8;font-size:15px;max-width:42ch}
+.pepeha ol{list-style:none;margin:0;padding:0 0 0 26px;border-left:2px solid var(--steel);display:grid;gap:10px}
+.pepeha li{font-family:var(--display);font-size:clamp(19px,2vw,23px);line-height:1.4;color:#fff}
+.pepeha li.last{margin-top:8px;color:#B9C8D8}
+.sec-h{font-size:clamp(30px,3.6vw,42px);margin:12px 0 14px}
+.sec-p{max-width:62ch;margin:0 0 36px}
+.bring{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.bring div{background:#fff;border:1px solid #D5DAE0;border-top:3px solid var(--navy);border-radius:4px;padding:26px 28px;display:grid;gap:8px;align-content:start}
+.bring h3{font-size:22px}
+.bring p{margin:0;color:var(--graphite)}
+.hl{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 48px}
+.hl li{padding:18px 0 18px 30px;border-top:1px solid #D5DAE0;position:relative}
+.hl li::before{content:"";position:absolute;left:0;top:28px;width:14px;height:2px;background:var(--steel)}
+.journey{list-style:none;margin:0;padding:0;display:grid}
+.journey li{display:grid;grid-template-columns:200px minmax(0,1fr);gap:28px;padding:24px 0;border-top:1px solid #D5DAE0}
+.journey .when{font-family:var(--display);font-size:20px;color:var(--navy);font-weight:600;font-variant-numeric:tabular-nums}
+.journey h3{font-size:20px;margin-bottom:6px}
+.journey p{margin:0;max-width:62ch}
+.wk{background:var(--cloud);text-align:center}
+.stance{margin:32px 0 0;max-width:60ch;font-family:var(--display);font-size:clamp(20px,2.2vw,24px);line-height:1.45;color:var(--navy);border-left:3px solid var(--steel);padding-left:22px}
+.cloud .bring div{border-color:#D5DAE0}
+.wk blockquote{margin:0 auto;max-width:34ch;font-family:var(--display);font-size:clamp(23px,2.8vw,32px);line-height:1.4;color:var(--navy)}
+.wk .en{margin:18px auto 0;max-width:52ch;font-size:18px}
+.wk .who{margin-top:14px;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:#5E7590;font-weight:600}
+.wk .btn{margin-top:40px}
+@media (max-width:760px){
+  .m-intro .wrap,.pepeha .wrap{grid-template-columns:1fr;gap:28px}
+  .m-intro img{max-width:200px}
+  .bring,.hl{grid-template-columns:1fr}
+  .journey li{grid-template-columns:1fr;gap:6px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="./" aria-label="Te Ahu Solutions, home"><img src="assets/te-ahu-solutions-white.svg" alt="Te Ahu Solutions" width="70" height="42"></a>
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="main" id="main-nav" aria-label="Main">
+      <a href="./#kaupapa">Kaupapa</a><a href="./#services">Services</a><a href="melanie.html" aria-current="page">About</a><a href="./#ahu">AHU</a><a href="./#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="m-intro"><div class="wrap">
+  <img src="assets/melanie-navy-640.jpg" alt="Melanie Sweet" width="640" height="800">
+  <div>
+    <span class="eyebrow">Founder, Te Ahu Solutions</span>
+    <h1>Melanie Sweet</h1>
+    <p class="line">Commercial rigour. Kaupapa Māori depth.</p>
+    <div class="lead">
+      <p>Melanie has spent almost forty years helping organisations work better, across very different worlds: industry, government, iwi, hapū, kura and community. What drives her is building capability and capacity, finding smarter ways of doing things, and bringing people together around a shared purpose.</p>
+      <p>She moved to Australia at ten and lived there for twenty-five years, starting full-time work at sixteen in a law firm. From there she built a commercial career in oil and gas, mining, engineering, civil works and major construction, learning procurement, contracts and how big projects really get delivered.</p>
+      <p>Coming home to Aotearoa in 2006 reconnected her with Te Ao Māori and with who she is. For twenty years since, she has led change in government, iwi, hapū and kaupapa Māori organisations, and founded Te Ahu in 2013 to bring both worlds together.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="pepeha" aria-labelledby="h-pepeha"><div class="wrap">
+  <div>
+    <h2 id="h-pepeha">Tēnei au</h2>
+    <p class="kaupapa-line">Ko au ko te pepeha,<br>ko te pepeha ko au</p>
+    <p class="en">I am my pepeha, and my pepeha is me.</p>
+  </div>
+  <ol>
+    <li>Ko Pouoterangi, ko Pouerua ngā maunga</li>
+    <li>Ko Rotokākahi, ko Waiaruhe ngā awa</li>
+    <li>Ko Te Uri o Tai, ko Te Uri Taniwha, ko Te Ngare Hauata ngā hapū</li>
+    <li>Ko Te Rarawa, ko Te Aupouri, ko Ngāpuhi nui tonu ngā iwi</li>
+  </ol>
+</div></section>
+
+<section aria-labelledby="h-how"><div class="wrap">
+  <span class="eyebrow">How I work</span>
+  <h2 class="sec-h" id="h-how">Honest advice, shared accountability</h2>
+  <p class="sec-p">The feedback I hear most is that I'm honest. I believe good work rests on transparency, accountability and people taking responsibility for their part, and I bring that to every engagement, even when it isn't the easy conversation.</p>
+  <div class="bring">
+    <div><h3>Honesty first</h3><p>A straight view of what's working and what isn't, said with respect.</p></div>
+    <div><h3>Accountability</h3><p>Clear roles, clear decisions, and everyone owning their part, leaders included.</p></div>
+    <div><h3>Capability that stays</h3><p>Growing your people's skills and capacity, so the gains last long after I've gone.</p></div>
+    <div><h3>Smarter ways of working</h3><p>Cutting through duplication and confusion so people can do their jobs well, with less stress.</p></div>
+  </div>
+  <p class="stance">Leadership should bring people together and put the kaupapa before ego. I work best with leaders who want honest advice and are ready to act on it.</p>
+</div></section>
+
+<section class="cloud" aria-labelledby="h-bring"><div class="wrap">
+  <span class="eyebrow">What I bring</span>
+  <h2 class="sec-h" id="h-bring">Depth across four areas</h2>
+  <p class="sec-p">Most of the work I do draws on more than one of these. That's the point: change rarely sits neatly in one box.</p>
+  <div class="bring">
+    <div><h3>Effective change</h3><p>Organisational transformation and system reform with a focus on what works: simpler processes, clearer roles and smarter ways of working that hold after the project ends.</p></div>
+    <div><h3>Strategy and governance</h3><p>Strategic planning, performance improvement and executive leadership. Working alongside boards, and serving on boards myself.</p></div>
+    <div><h3>Commercial, property and infrastructure</h3><p>Procurement, contracts and risk, capital works, and long-term property and asset investment planning.</p></div>
+    <div><h3>Māori development and relationships</h3><p>Crown–iwi relationships, hapū capability, Māori economic development and enterprise, and whānau-centred design.</p></div>
+  </div>
+</div></section>
+
+<section aria-labelledby="h-hl"><div class="wrap">
+  <span class="eyebrow">Highlights</span>
+  <h2 class="sec-h" id="h-hl">Some of the work behind it</h2>
+  <ul class="hl">
+    <li>Led property and investment planning across a regional network of kura, so kura and hapū aspirations shape long-term investment.</li>
+    <li>Designed an investment framework that links kura aspirations, education outcomes and future property decisions.</li>
+    <li>Led kaupapa Māori organisations at executive level, focused on whānau and community wellbeing.</li>
+    <li>Directed large change programmes in central government, moving thousands of people to new ways of working.</li>
+    <li>Managed more than 140 international suppliers on a major industrial plant refurbishment.</li>
+    <li>Helped establish a Māori farming collective to grow regional economic participation.</li>
+  </ul>
+</div></section>
+
+<section aria-labelledby="h-journey"><div class="wrap">
+  <span class="eyebrow">Career journey</span>
+  <h2 class="sec-h" id="h-journey">From industry to iwi</h2>
+  <ol class="journey">
+    <li><span class="when">2013 to now</span><div><h3>Founder and Director, Te Ahu Solutions</h3><p>Strategic advice, change leadership, facilitation and capability building for organisations, iwi and communities. Founder of AHU, a guided coaching experience for individuals.</p></div></li>
+    <li><span class="when">2018 to 2026</span><div><h3>Senior leadership, Te Tai Tokerau</h3><p>General management of a kaupapa Māori organisation, strategic property and investment leadership in education, and Crown–iwi programme leadership for iwi development. Board member for two kura.</p></div></li>
+    <li><span class="when">2006 to 2018</span><div><h3>Government, regional and community leadership</h3><p>Change management, property, social housing, capital delivery and regional economic development roles across central government, regional development agencies, community organisations and Māori trusts.</p></div></li>
+    <li><span class="when">Before 2006</span><div><h3>Commercial career in Australia</h3><p>From legal support to commercial, procurement, contract and project roles in oil and gas, mining, engineering, urban development, local government and Indigenous enterprise.</p></div></li>
+  </ol>
+</div></section>
+
+<section class="wk" aria-label="Whakataukī"><div class="wrap">
+  <blockquote>Kua tawhiti kē tō haerenga mai, kia kore e haere tonu. He tino nui rawa ōu mahi, kia kore e mahi nui tonu.</blockquote>
+  <p class="en">You have come too far, not to go further. You have done too much, not to do more.</p>
+  <p class="who">Sir James Henare</p>
+  <a class="btn dark" href="./#contact">Start a conversation</a>
+</div></section>
+</main>
+<footer>
+  <div class="wrap">
+    <img src="assets/te-ahu-solutions-white.svg" alt="Te Ahu Solutions" width="57" height="34">
+    <span>© Te Ahu Solutions Ltd</span>
+    <nav aria-label="Footer"><a href="https://ahucoach.com">AHU Coach</a></nav>
+  </div>
+</footer>
+<script>
+(function(){var b=document.getElementById('menu-btn'),n=document.getElementById('main-nav');if(!b||!n)return;
+b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});
+n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false');}});})();
+</script>
+</body>
+</html>
