@@ -74,6 +74,19 @@ section{padding-block:clamp(64px,9vw,112px)}
 .services .head p{max-width:46ch}
 .start-line{margin:40px 0 0;max-width:70ch;font-size:18px}
 .start-line b{font-family:var(--display);color:var(--navy);font-size:21px;margin-right:4px}
+.svc-grid.focus{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 48px}
+.also{margin-top:44px;border-top:1px solid #DCE3EA;padding-top:24px;display:flex;flex-wrap:wrap;gap:8px 28px;align-items:baseline}
+.also h3{font-size:20px}
+.also p{margin:0;color:#5D636A}
+.fit .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
+.fit h2{font-size:clamp(30px,3.6vw,42px);line-height:1.15;margin:12px 0 18px}
+.services h2{line-height:1.15}
+.fit p{max-width:52ch}
+.fit .stance{margin-top:24px;font-family:var(--display);font-size:clamp(20px,2.2vw,24px);line-height:1.45;color:var(--navy);border-left:3px solid var(--steel);padding-left:20px}
+.fit ul{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.fit li{font-family:var(--display);font-size:clamp(19px,2vw,22px);color:var(--navy);padding:16px 0 16px 34px;border-top:1px solid #D5DAE0;position:relative}
+.fit li::before{content:"";position:absolute;left:0;top:28px;width:18px;height:2px;background:var(--steel)}
+@media (max-width:760px){.svc-grid.focus,.fit .wrap{grid-template-columns:1fr;gap:28px}}
 .svc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px 32px}
 .svc{border-top:2px solid var(--steel);padding-top:20px;display:grid;gap:10px;align-content:start;min-width:0}
 .svc h3{font-size:22px;line-height:1.25}
@@ -163,26 +176,43 @@ footer a{color:#C9D4E0}
     <div class="wrap">
       <span class="eyebrow" id="h-kaupapa">The kaupapa</span>
       <p class="statement">Creating clarity, enabling change and nurturing growth for people, organisations and the whenua.</p>
-      <p class="body">I build capability so the people I work with can lead for themselves. I bring clarity, structure, fresh ideas and an outside view. The decisions, and the mana that comes with them, stay with you.</p>
+      <p class="body">I build understanding, capability and capacity, so the people I work with can lead for themselves and have a better experience of work. I bring clarity, structure, fresh ideas and an outside view. The decisions, and the mana that comes with them, stay with you.</p>
     </div>
   </section>
 
   <section class="services" id="services" aria-labelledby="h-services">
     <div class="wrap">
       <div class="head">
-        <div><span class="eyebrow">What I do</span><h2 id="h-services">Ways I work with you</h2></div>
-        <p>Every engagement is shaped around your people, your context and what you need to achieve. Most draw on more than one of these.</p>
+        <div><span class="eyebrow">Where I focus</span><h2 id="h-services">Building people, ventures and better ways to work</h2></div>
+        <p>I want fewer people stressed at work, more people backing themselves in business, and organisations that bring out the best in their people. That's where I put my energy.</p>
       </div>
-      <div class="svc-grid">
-        <div class="svc"><h3>Strategic advisory</h3><p>Independent, considered advice on the decisions that shape where you go next.</p></div>
-        <div class="svc"><h3>Social enterprise and new ventures</h3><p>Taking good ideas from kōrero to reality: business models, structures and plans for ventures that create social, cultural and economic value.</p></div>
-        <div class="svc"><h3>Innovation and smarter systems</h3><p>Better ways of working: simpler processes, clearer roles and systems that save time, money and stress.</p></div>
-        <div class="svc"><h3>Collaboration and partnerships</h3><p>Bringing iwi, hapū, agencies, businesses and communities together around shared goals, and building partnerships that last.</p></div>
-        <div class="svc"><h3>Facilitation and wānanga</h3><p>One-to-one and group sessions, on the marae, in the boardroom or out on the whenua, that bring people together around a shared kaupapa.</p></div>
-        <div class="svc"><h3>Leadership and capability</h3><p>Growing the skills and confidence your people need to lead, and supporting them through change so it holds.</p></div>
+      <div class="svc-grid focus">
+        <div class="svc"><h3>New ventures and social enterprise</h3><p>Not everyone who is employed should be. I help people and communities take good ideas from kōrero to reality, with business models, structures and plans for ventures that create social, cultural and economic value.</p></div>
+        <div class="svc"><h3>Product development and innovation</h3><p>Shaping and testing new products, services and ideas, and finding smarter systems that save time, money and stress.</p></div>
+        <div class="svc"><h3>Collaborations and connections</h3><p>Bringing the right people together. Innovative collaborations between iwi, hapū, businesses, agencies and communities that none of them could achieve alone.</p></div>
+        <div class="svc"><h3>Capability and capacity</h3><p>Building understanding and skills in leaders, trustees and teams, through coaching, wānanga and workshops, so people can lead and do their work well.</p></div>
       </div>
-      <p class="start-line"><b>Most people start with</b> a single conversation: one thing that isn't working, or one idea they want to get off the ground. From there, we work out together whether I'm the right fit.</p>
-      <div class="approach-line"><b>Select. High value. Human.</b><span>I take on a small number of engagements at a time, so every partnership has my full attention.</span></div>
+      <div class="also">
+        <h3>Also, for the right partners</h3>
+        <p>Strategic planning · Board facilitation · Project management, small to large · Executive support, including financial forecasting, policy and change</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="fit cloud" id="fit" aria-labelledby="h-fit">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">The right fit</span>
+        <h2 id="h-fit">Are you a good fit for this work?</h2>
+        <p>I choose the work I take on, and I take on only a few engagements at a time. So the first conversation isn't just about whether I'm right for you. It's about whether you're right for this work.</p>
+        <p class="stance">I work best with leaders who want honest advice and are ready to act on it.</p>
+      </div>
+      <ul>
+        <li>You're open to a different perspective.</li>
+        <li>You're willing to own your part, leaders included.</li>
+        <li>You want your own people to grow, not to depend on me.</li>
+        <li>Your kaupapa is about people, communities or the whenua doing better.</li>
+      </ul>
     </div>
   </section>
 
