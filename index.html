@@ -120,6 +120,17 @@ section{padding-block:clamp(64px,9vw,112px)}
 .doorway a:hover{background:var(--ahu-charcoal);color:var(--ahu-alabaster)}
 
 /* contact */
+.faq-h{font-size:clamp(30px,3.6vw,42px);line-height:1.15;margin:12px 0 28px}
+.qa{display:grid;max-width:820px}
+.qa details{border-top:1px solid #D5DAE0}
+.qa details:last-child{border-bottom:1px solid #D5DAE0}
+.qa summary{cursor:pointer;list-style:none;padding:20px 40px 20px 0;font-family:var(--display);font-size:clamp(18px,2vw,21px);color:var(--navy);font-weight:600;position:relative}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"+";position:absolute;right:6px;top:16px;font-family:var(--body);font-size:26px;color:#5E7590}
+.qa details[open] summary::after{content:"\2212"}
+.qa summary:focus-visible{outline:3px solid var(--steel);outline-offset:2px}
+.qa details p{margin:0 0 22px;max-width:66ch}
+mark.confirm{background:#F6E3A8;color:inherit;padding:0 3px;border-radius:2px}
 .contact{background:var(--navy);color:#DCE4EC}
 .contact .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
 .contact h2{color:#fff;font-size:clamp(32px,4.4vw,50px);margin:12px 0 18px}
@@ -271,6 +282,14 @@ footer a{color:#C9D4E0}
         <div><span class="eyebrow" id="h-ahu">For individuals</span><p>A guided coaching experience that helps you make sense of what matters and shape your next meaningful step.</p></div>
         <a href="https://ahucoach.com">Visit ahucoach.com</a>
       </div>
+    </div>
+  </section>
+
+  <section id="questions" aria-labelledby="h-faq">
+    <div class="wrap">
+      <span class="eyebrow">Questions</span>
+      <h2 id="h-faq" class="faq-h">Good questions to ask</h2>
+      <div class="qa"><details><summary>Do you work with anyone who gets in touch?</summary><p>No, and that's deliberate. I take on a small number of engagements at a time and choose them carefully. The first conversation is about whether we're the right fit for each other.</p></details><details><summary>Can we talk before we commit?</summary><p>Yes. The first conversation is free, up to 30 minutes, so we can both decide whether we're the right fit. After that, scoping, advice and proposals are paid work, under my Terms of Engagement.</p></details><details><summary>Is Te Ahu Solutions just you?</summary><p>Yes, Te Ahu Solutions is me. Where a kaupapa needs other skills, I bring in trusted people I know and have worked with: right people, right skills, right kaupapa.</p></details><details><summary>Do you only work with Māori organisations?</summary><p>No. My work is focused mainly on the kaupapa. My practice is grounded in tikanga, so if that aligns with your organisation or business, and we're the right fit, then let's kōrero.</p></details><details><summary>Where do you work?</summary><p>I work remotely, from Te Tai Tokerau. If you'd like me there in person, that's your call, and we'll agree it up front.</p></details><details><summary>How do you charge?</summary><p>It depends on the work. After our first conversation I'll propose a clear scope and either a fixed fee or a day rate, agreed in writing before we start. No surprises.</p></details><details><summary>How long does an engagement take?</summary><p>Anything from a single wānanga to several months alongside you. We'll agree what's needed at the start, and I'll be honest if you need less than you think.</p></details><details><summary>Do you respond to tenders?</summary><p>Sometimes, when the kaupapa is a good fit. Most of my work comes from direct conversations and the people who know my work.</p></details><details><summary>Is what we share kept confidential?</summary><p>Yes. I treat everything you share as confidential, and I'm happy to sign a confidentiality agreement.</p></details><details><summary>How does AHU fit with Te Ahu Solutions?</summary><p>AHU is a Te Ahu Solutions product. It brings the same approach to individuals: a guided coaching experience that helps people make sense of what matters and shape their next step. Visit <a href="https://ahucoach.com">ahucoach.com</a>.</p></details></div>
     </div>
   </section>
 
