@@ -121,11 +121,22 @@ section{padding-block:clamp(64px,9vw,112px)}
 
 /* contact */
 .contact{background:var(--navy);color:#DCE4EC}
-.contact .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:48px;align-items:end}
+.contact .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
 .contact h2{color:#fff;font-size:clamp(32px,4.4vw,50px);margin:12px 0 18px}
 .contact .eyebrow{color:#B9C8D8}
 .contact .email{font-family:var(--display);font-size:clamp(20px,2.4vw,26px);color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4);word-break:break-word}
 .contact .email:hover{border-bottom-color:#fff}
+.contact .alt{margin-top:18px;font-size:15px;color:#B9C8D8}
+.contact .email-sm{color:#fff}
+.cform{display:grid;gap:14px;align-self:start}
+.cform label{display:grid;gap:6px;font-size:14px;font-weight:600;color:#DCE4EC}
+.cform label .lt{font-style:normal}
+.cform label span{font-weight:400;color:#9DAEC2}
+.cform input,.cform textarea{font:16px var(--body);color:var(--navy);background:#fff;border:1px solid #9DAEC2;border-radius:3px;padding:12px 14px;width:100%}
+.cform input:focus,.cform textarea:focus{outline:3px solid var(--steel);outline-offset:1px}
+.cform .btn{margin-top:6px;justify-self:start;border:0;cursor:pointer;font-family:var(--body)}
+.cform .hp{display:none}
+.cform .status{margin:0;font-size:15px;color:#fff;min-height:1.4em}
 .contact .where{margin-top:14px;font-size:15px;color:#B9C8D8}
 
 footer{background:var(--navy-deep);color:#9DAEC2;font-size:14px;padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -267,13 +278,23 @@ footer a{color:#C9D4E0}
     <div class="wrap">
       <div>
         <span class="eyebrow">Contact</span>
-        <h2 id="h-contact">Start a conversation</h2>
+        <h2 id="h-contact">Get in touch</h2>
         <p>Tell me a little about what you're working on, and I'll be in touch.</p>
-      </div>
-      <div>
-        <a class="email" href="mailto:support@teahusolutions.com">support@teahusolutions.com</a>
+        <p class="alt">Prefer email? <a class="email-sm" href="mailto:support@teahusolutions.com">support@teahusolutions.com</a></p>
         <p class="where">Based in Te Tai Tokerau, working across Aotearoa.</p>
       </div>
+      <form class="cform" id="cform" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="7f6b6b27-2bf0-4f53-b5ea-9755d62e6141">
+        <input type="hidden" name="subject" value="New enquiry from teahusolutions.com">
+        <input type="hidden" name="from_name" value="Te Ahu Solutions website">
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label for="cf-name">Your name<input id="cf-name" name="name" required autocomplete="name"></label>
+        <label for="cf-email">Email<input id="cf-email" name="email" type="email" required autocomplete="email"></label>
+        <label for="cf-org"><em class="lt">Organisation or kaupapa <span>(optional)</span></em><input id="cf-org" name="organisation" autocomplete="organization"></label>
+        <label for="cf-msg">What are you working on?<textarea id="cf-msg" name="message" rows="5" required></textarea></label>
+        <button class="btn" type="submit">Send</button>
+        <p class="status" id="cf-status" role="status" aria-live="polite"></p>
+      </form>
     </div>
   </section>
 </main>
@@ -293,6 +314,13 @@ footer a{color:#C9D4E0}
   btn.addEventListener('click',function(){var open=nav.classList.toggle('open');btn.setAttribute('aria-expanded',open?'true':'false');});
   nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
 })();
+</script>
+<script>
+(function(){var f=document.getElementById('cform');if(!f)return;var st=document.getElementById('cf-status');
+f.addEventListener('submit',function(e){e.preventDefault();var b=f.querySelector('button');b.disabled=true;st.textContent='Sending…';
+fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)}).then(function(r){return r.json();}).then(function(d){
+if(d.success){f.reset();st.textContent='Thank you. Your message is on its way, and I\'ll be in touch.';}else{st.textContent='Sorry, that didn\'t send. Please email support@teahusolutions.com.';}
+}).catch(function(){st.textContent='Sorry, that didn\'t send. Please email support@teahusolutions.com.';}).finally(function(){b.disabled=false;});});})();
 </script>
 </body>
 </html>
