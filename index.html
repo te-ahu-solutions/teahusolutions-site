@@ -160,6 +160,28 @@ footer .flinks ul{list-style:none;margin:0;padding:0;display:grid;gap:4px;font-s
 .about .quote span{display:block;margin-top:6px;font-family:var(--body);font-size:14px;color:#5D636A}
 @media (max-width:860px){.pair,.appr{grid-template-columns:1fr}.appr-photo{min-height:420px}}
 @media (max-width:520px){.pc-grid{grid-template-columns:1fr}}
+.kp-top{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:56px;align-items:end}
+.kp-h{font-size:clamp(30px,3.8vw,46px);line-height:1.15;margin-top:14px;max-width:20ch}
+.kp-lead{display:grid;gap:14px;max-width:46ch}
+.kp-lead p:first-child{font-family:var(--display);font-size:clamp(19px,2vw,22px);line-height:1.45;color:var(--navy)}
+.pillars{margin-top:56px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.pillars div{border-top:2px solid var(--navy);padding-top:18px;display:grid;gap:8px;align-content:start}
+.pillars .eyebrow{color:var(--navy)}
+.pillars p{font-size:16px;max-width:32ch}
+.kp-close{margin-top:40px;font-family:var(--display);font-style:italic;font-size:clamp(19px,2vw,22px);color:var(--navy)}
+.services.cloud .sv-head{max-width:640px;display:grid;gap:12px}
+.sv-head h2{font-size:clamp(30px,3.6vw,42px);line-height:1.15}
+.sv-head p{font-size:18px;max-width:56ch}
+.tiles{margin-top:44px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.tile{background:#fff;border:1px solid #DCE3EA;border-radius:6px;padding:clamp(24px,2.8vw,32px);display:grid;gap:10px;align-content:start;transition:box-shadow .2s,transform .2s}
+.tile:hover{box-shadow:0 18px 40px -26px rgba(16,29,48,.45);transform:translateY(-2px)}
+@media (prefers-reduced-motion:reduce){.tile{transition:none}.tile:hover{transform:none}}
+.tile h3{font-size:clamp(21px,2.2vw,24px);line-height:1.25}
+.tile p{font-size:16px}
+.also2{margin-top:20px;display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;padding:16px 22px;border:1px dashed #B9C8D8;border-radius:6px;font-size:15px;color:#5D636A}
+.also2 b{font-family:var(--display);font-size:18px;color:var(--navy);font-weight:600}
+.services.cloud .panel.light{background:#fff;border:1px solid #DCE3EA}
+@media (max-width:860px){.kp-top,.tiles,.pillars{grid-template-columns:1fr;gap:24px}}
 .principles{display:grid;gap:26px;margin-top:26px}
 .principles div{display:grid;gap:6px}
 .principles h3{font-size:21px}
@@ -256,31 +278,41 @@ footer a{color:#C9D4E0}
     </div>
   </div>
 
-  <section class="kaupapa cloud" id="kaupapa" aria-labelledby="h-kaupapa">
+  <section class="kaupapa" id="kaupapa" aria-labelledby="h-kaupapa">
     <div class="wrap">
-      <span class="eyebrow" id="h-kaupapa">The kaupapa</span>
-      <p class="statement">Building capability and capacity, creating safe and nurturing environments<span class="sub">that enable positive change and growth for people, organisations and the whenua.</span></p>
-      <p class="body">We build understanding, capability and capacity, so the people we work with can lead for themselves and have a better experience.</p>
-      <p class="body">We bring the courage to think outside the box, depth that speaks to the values and behaviours that strengthen an organisation's culture, and structure that protects the fundamentals and essence of the agreed kaupapa. Here, accountability and responsibility are exercised properly.</p>
+      <div class="kp-top">
+        <div>
+          <span class="eyebrow">The kaupapa</span>
+          <h2 id="h-kaupapa" class="kp-h">Capability and capacity, built in safe and nurturing environments.</h2>
+        </div>
+        <div class="kp-lead">
+          <p>So people, organisations and the whenua can grow and change for the better.</p>
+          <p>Our role is to build understanding, so the people we work with can lead for themselves, and have a better experience doing it.</p>
+        </div>
+      </div>
+      <div class="pillars">
+        <div><span class="eyebrow">Courage</span><p>To think outside the box, and to say what needs to be said.</p></div>
+        <div><span class="eyebrow">Depth</span><p>Values and behaviours that strengthen the culture of your organisation.</p></div>
+        <div><span class="eyebrow">Structure</span><p>Protecting the fundamentals and essence of the kaupapa you've agreed.</p></div>
+      </div>
+      <p class="kp-close">Here, accountability and responsibility are exercised properly.</p>
     </div>
   </section>
 
-  <section class="services" id="services" aria-labelledby="h-services">
+  <section class="services cloud" id="services" aria-labelledby="h-services">
     <div class="wrap">
-      <div class="head">
-        <div><span class="eyebrow">Services</span><h2 id="h-services">How can we help?</h2></div>
+      <div class="sv-head">
+        <span class="eyebrow">Services</span>
+        <h2 id="h-services">How can we help?</h2>
         <p>We want more people realising their full potential, whether in business, in strategic operations, within their whānau or serving their community.</p>
       </div>
-      <div class="svc-grid focus">
-        <div class="svc"><h3>Hapū development</h3><p>Every hapū is different, and so are its development needs. We help take aspirational ideas and develop practical models that support mana motuhake: right people, right skills, right kaupapa.</p></div>
-        <div class="svc"><h3>Whenua-based development</h3><p>Shaping the plan, structure and partnerships for investment and development on whenua, so the opportunity serves the people it belongs to.</p></div>
-        <div class="svc"><h3>Whānau social enterprise</h3><p>Getting a new business off the ground on solid footing: a clear plan, the right structure and honest advice from day one.</p></div>
-        <div class="svc"><h3>Building capability and capacity</h3><p>Facilitation, coaching, wānanga and workshops so your teams can thrive.</p></div>
+      <div class="tiles">
+        <article class="tile"><span class="eyebrow">For hapū</span><h3>Hapū development</h3><p>Every hapū is different, and so are its development needs. We take aspirational ideas and develop practical models that support mana motuhake: right people, right skills, right kaupapa.</p></article>
+        <article class="tile"><span class="eyebrow">For whenua</span><h3>Whenua-based development</h3><p>Shaping the plan, structure and partnerships for investment and development on whenua, so the opportunity serves the people it belongs to.</p></article>
+        <article class="tile"><span class="eyebrow">For whānau</span><h3>Whānau social enterprise</h3><p>Getting a new business off the ground on solid footing: a clear plan, the right structure and honest advice from day one.</p></article>
+        <article class="tile"><span class="eyebrow">For teams</span><h3>Building capability and capacity</h3><p>Facilitation, coaching, wānanga and workshops so your teams can thrive.</p></article>
       </div>
-      <div class="also">
-        <h3>Iwi, agencies and larger organisations</h3>
-        <p>Scoped projects only, by conversation.</p>
-      </div>
+      <p class="also2"><b>Iwi, agencies and larger organisations</b><span>Scoped projects only, by conversation.</span></p>
 
       <div class="pair">
         <div class="panel dark">
@@ -311,7 +343,7 @@ footer a{color:#C9D4E0}
     </div>
   </section>
 
-  <section class="approach cloud" id="approach" aria-labelledby="h-how">
+  <section class="approach" id="approach" aria-labelledby="h-how">
     <div class="wrap appr">
       <figure class="appr-photo">
         <img src="assets/wahine-beach-1400.jpg" alt="Wāhine standing together in the shallows at dusk during a karanga wānanga in Ōtaki" width="1400" height="1050">
@@ -334,7 +366,7 @@ footer a{color:#C9D4E0}
     </div>
   </section>
 
-  <section id="about" aria-labelledby="h-about">
+  <section class="cloud" id="about" aria-labelledby="h-about">
     <div class="wrap about">
       <img src="assets/melanie-navy-640.jpg" alt="Melanie Sweet, founder of Te Ahu Solutions" width="640" height="800">
       <div>
@@ -351,7 +383,7 @@ footer a{color:#C9D4E0}
     </div>
   </section>
 
-  <section class="cloud" id="ahu" aria-labelledby="h-ahu" style="padding-block:clamp(48px,7vw,80px)">
+  <section id="ahu" aria-labelledby="h-ahu" style="padding-block:clamp(48px,7vw,80px)">
     <div class="wrap">
       <div class="doorway">
         <img src="assets/ahu-gold.svg" alt="AHU, Making sense of what matters" width="240" height="122">
@@ -361,7 +393,7 @@ footer a{color:#C9D4E0}
     </div>
   </section>
 
-  <section id="questions" aria-labelledby="h-faq">
+  <section class="cloud" id="questions" aria-labelledby="h-faq">
     <div class="wrap">
       <span class="eyebrow">Questions</span>
       <h2 id="h-faq" class="faq-h">Good questions to ask</h2>
