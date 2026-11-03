@@ -121,7 +121,7 @@ footer .flinks ul{list-style:none;margin:0;padding:0;display:grid;gap:4px;font-s
 
 .pair{margin-top:56px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:stretch}
 .panel{border-radius:6px;padding:clamp(28px,3.4vw,40px);display:grid;gap:12px;align-content:start}
-.panel h3{font-size:clamp(24px,2.6vw,30px);line-height:1.2}
+.panel h3{font-size:clamp(22px,2.3vw,28px);line-height:1.2}
 .panel.dark{background:var(--navy);color:#DCE4EC}
 .panel.dark .eyebrow{color:#B9C8D8}
 .panel.dark h3{color:#fff}
@@ -193,6 +193,13 @@ footer .flinks ul{list-style:none;margin:0;padding:0;display:grid;gap:4px;font-s
 .pair ul.plist li{font-family:var(--display);font-size:18px;line-height:1.45;padding:11px 0 11px 28px;border-top:1px solid #D5DAE0;position:relative;color:var(--navy)}
 .pair .panel.dark ul.plist li{color:#fff;border-top-color:rgba(255,255,255,.16)}
 .pair ul.plist li::before{content:"";position:absolute;left:0;top:23px;width:14px;height:2px;background:var(--steel)}
+.pair .panel p.intro{display:block;padding-bottom:20px;align-self:start}
+.pair .panel .block{display:grid;gap:10px;align-content:start}
+.pair .panel .note{padding-top:22px;font-size:14px;line-height:1.55;align-self:end}
+.pair .panel.dark .note{color:#9DAEC2}
+.pair .panel.light .note{color:#5D636A}
+.pair .panel.light .note b{color:var(--navy)}
+.pair ul.plist li{white-space:normal}
 .pair .panel .if{margin:0}
 .pair .panel.dark .if{color:#fff}
 @media (max-width:860px){.pair{grid-template-rows:none;row-gap:24px}.pair .panel{grid-row:auto;grid-template-rows:none}}
@@ -332,21 +339,20 @@ footer a{color:#C9D4E0}
         <div class="panel dark">
           <span class="eyebrow">Where we start</span>
           <h3>The Strategy Session</h3>
-          <div class="intro"><p>A 30-minute conversation about where you are and where you want to go, so we can both see the way forward clearly.</p><p class="if">WE LOOK AT</p></div>
-          <ul class="plist"><li>Your situation</li><li>Your intentions</li><li>Your current capability and capacity</li><li>Your commitment</li></ul>
-          <div class="after"><p>From there, we develop a personalised <b>Call to Action Plan</b> to help you decide the way forward.</p><p class="small">Financial, accounting and legal advice sit with your own professionals. We'll tell you when you need them.</p></div>
+          <p class="intro">A 30-minute discussion. From there, we develop a personalised <b>Call to Action Plan</b> to help you decide the way forward.</p>
+          <div class="block"><p class="if">WE LOOK AT</p><ul class="plist"><li>Your situation</li><li>Your intentions</li><li>Your capability and capacity</li><li>Your commitment</li></ul></div>
+          <p class="note">Financial, accounting and legal advice sit with your own professionals. We'll tell you when you need them.</p>
         </div>
         <div class="panel light">
           <span class="eyebrow">Alignment</span>
           <h3>Your readiness to take action</h3>
-          <div class="intro"><p>We choose the work we take on, and only a few engagements at a time. The question is whether you're ready for this work.</p><p class="if">IF</p></div>
-          <ul class="plist"><li>You're open to a different perspective.</li><li>You're willing to own your part, leaders included.</li><li>You want your own people to grow, not to depend on us.</li><li>Your kaupapa is about people, communities or the whenua doing better.</li></ul>
-          <div class="after"></div>
+          <p class="intro">We choose the work we take on, and only a few engagements at a time. The question is whether you're ready.</p>
+          <div class="block"><p class="if">IF YOU'RE</p><ul class="plist"><li>Open to a different perspective</li><li>Willing to own your part</li><li>Wanting your people to grow</li><li>Driven by kaupapa, not ego</li></ul></div>
+          <p class="note"><b>What we don't take on:</b> whole-of-iwi mandates, financial or accounting advice, product design, or open-ended retainers.</p>
         </div>
       </div>
       <div class="pair-cta">
         <a class="btn dark" href="#contact">Get in touch</a>
-        <p class="notfor"><b>What we don't take on:</b> whole-of-iwi mandates, financial or accounting advice, product design, or open-ended retainers.</p>
       </div>
     </div>
   </section>
