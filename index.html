@@ -9,7 +9,7 @@
 <link rel="canonical" href="https://teahusolutions.com/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Te Ahu Solutions">
-<meta property="og:description" content="New ventures, built to last.">
+<meta property="og:description" content="New possibilities, strong foundations.">
 <meta property="og:url" content="https://teahusolutions.com/">
 <meta property="og:image" content="https://teahusolutions.com/assets/hero-harbour-1200.jpg">
 <meta name="theme-color" content="#16273F">
@@ -109,6 +109,56 @@ section{padding-block:clamp(64px,9vw,112px)}
 .veil{position:relative;border-radius:4px;overflow:hidden}
 .veil img{border-radius:0;filter:saturate(.8) brightness(.94)}
 .veil::after{content:"";position:absolute;inset:0;background:rgba(22,39,63,.26);pointer-events:none}
+.kaupapa .body + .body{margin-top:14px}
+.how-intro{margin:14px 0 0;max-width:52ch}
+.plan5{gap:18px}
+.plan5 h3{font-size:19px}
+.contact .cform .alt,.contact .cform .where{margin:0;font-size:14px;color:#B9C8D8}
+footer .flinks{display:flex;gap:28px;flex-wrap:wrap}
+footer .flinks ul{list-style:none;margin:0;padding:0;display:grid;gap:4px;font-size:13px}
+
+.pair{margin-top:56px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:stretch}
+.panel{border-radius:6px;padding:clamp(28px,3.4vw,40px);display:grid;gap:12px;align-content:start}
+.panel h3{font-size:clamp(24px,2.6vw,30px);line-height:1.2}
+.panel.dark{background:var(--navy);color:#DCE4EC}
+.panel.dark .eyebrow{color:#B9C8D8}
+.panel.dark h3{color:#fff}
+.panel.dark p.small{font-size:14px;color:#9DAEC2;margin-top:6px}
+.panel.light{background:var(--cloud)}
+.panel .if{font-family:var(--display);font-weight:600;font-size:22px;letter-spacing:.1em;color:var(--navy);margin-top:6px}
+.panel ul{list-style:none;margin:0;padding:0;display:grid}
+.panel li{font-family:var(--display);font-size:18px;color:var(--navy);padding:10px 0 10px 28px;border-top:1px solid #D5DAE0;position:relative}
+.panel li::before{content:"";position:absolute;left:0;top:21px;width:14px;height:2px;background:var(--steel)}
+.pair-cta{margin-top:32px;display:grid;justify-items:center;gap:14px;text-align:center}
+.pair-cta .btn{margin-top:0}
+.pair-cta .notfor{font-size:14px;color:#5D636A;max-width:64ch}
+.appr{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:stretch}
+.appr-photo{margin:0;position:relative;border-radius:6px;overflow:hidden;min-height:520px}
+.appr-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.8)}
+.appr-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,29,48,.05) 25%,rgba(16,29,48,.88) 100%)}
+.appr-photo figcaption{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:clamp(24px,3vw,36px);display:grid;gap:10px;color:#DCE4EC}
+.appr-photo .eyebrow{color:#B9C8D8}
+.appr-photo h2{color:#fff;font-size:clamp(28px,3.4vw,40px);line-height:1.15}
+.appr-photo p{max-width:44ch;font-size:16px}
+.plancard{background:#fff;border-radius:6px;box-shadow:0 1px 0 #D5DAE0,0 18px 40px -24px rgba(16,29,48,.35);padding:clamp(24px,3vw,36px);display:grid;gap:18px;align-content:start}
+.pc-head{display:flex;justify-content:space-between;align-items:center;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#5E7590;padding-bottom:14px;border-bottom:1px solid #D5DAE0}
+.pc-dot{width:10px;height:10px;border-radius:50%;background:var(--steel)}
+.pc-mirror{background:var(--cloud);border-left:3px solid var(--navy);border-radius:4px;padding:18px 20px;display:grid;gap:6px}
+.pc-mirror b{font-family:var(--display);font-size:24px;color:var(--navy);font-weight:600}
+.pc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 22px}
+.pc-grid > div{display:flex;gap:12px;align-items:flex-start}
+.pc-grid .t{display:grid;gap:4px;padding-top:9px;min-width:0}
+.panel.dark ul.cover{margin:2px 0 4px}
+.panel.dark ul.cover li{color:#fff;border-top-color:rgba(255,255,255,.14);font-size:17px}
+.panel.dark ul.cover li::before{background:var(--steel)}
+.panel.dark b{color:#fff;font-weight:600}
+.pc-grid .n{font-family:var(--display);font-size:40px;line-height:1;color:var(--navy);font-weight:600}
+.pc-grid b{font-family:var(--display);font-size:18px;color:var(--navy);font-weight:600}
+.pc-grid p{font-size:15px}
+.about .quote{font-family:var(--display);font-size:clamp(20px,2.2vw,24px);line-height:1.45;color:var(--navy);border-left:3px solid var(--steel);padding-left:20px;margin:6px 0 4px}
+.about .quote span{display:block;margin-top:6px;font-family:var(--body);font-size:14px;color:#5D636A}
+@media (max-width:860px){.pair,.appr{grid-template-columns:1fr}.appr-photo{min-height:420px}}
+@media (max-width:520px){.pc-grid{grid-template-columns:1fr}}
 .principles{display:grid;gap:26px;margin-top:26px}
 .principles div{display:grid;gap:6px}
 .principles h3{font-size:21px}
@@ -185,9 +235,10 @@ footer a{color:#C9D4E0}
     <a class="logo" href="#top" aria-label="Te Ahu Solutions, home"><img src="assets/te-ahu-solutions-white.svg" alt="Te Ahu Solutions" width="70" height="42"></a>
     <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="main-nav">Menu</button>
     <nav class="main" id="main-nav" aria-label="Main">
-      <a href="#kaupapa">Kaupapa</a>
+      <a href="#top">Home</a>
       <a href="#services">Services</a>
-      <a href="melanie.html">About</a>
+      <a href="#approach">Approach</a>
+      <a href="#about">About</a>
       <a href="#ahu">AHU</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -198,8 +249,8 @@ footer a{color:#C9D4E0}
   <div class="hero" id="top" role="img" aria-label="Hills and harbour at low tide, Te Tai Tokerau">
     <div class="wrap">
       <span class="eyebrow">Te Ahu Solutions</span>
-      <h1>New ventures, built to last</h1>
-      <p class="lead">We help hapū, whānau and founders turn aspirations into working ventures, from whenua-based development to new businesses, with one clear plan, practical structure and the capability to carry it without us.</p>
+      <h1>New possibilities, strong foundations</h1>
+      <p class="lead">We build capability and capacity for whānau, SMEs and hapū, turning aspirations into practical strategies that are easy to put into action. From whenua-based development to sharper ways of working within existing structures, every engagement brings clarity through a co-designed Action Plan.</p>
       <a class="btn" href="#contact">Get in touch</a>
     </div>
   </div>
@@ -207,76 +258,76 @@ footer a{color:#C9D4E0}
   <section class="kaupapa cloud" id="kaupapa" aria-labelledby="h-kaupapa">
     <div class="wrap">
       <span class="eyebrow" id="h-kaupapa">The kaupapa</span>
-      <p class="statement">Creating clarity, enabling change and nurturing growth for people, organisations and the whenua.</p>
-      <p class="body">We build understanding, capability and capacity, so the people we work with can lead for themselves and have a better experience of work. We bring clarity, structure, fresh ideas and an outside view. The decisions, and the mana that comes with them, stay with you.</p>
+      <p class="statement">Building capability and capacity, creating safe and nurturing environments that enable positive change and growth for people, organisations and the whenua.</p>
+      <p class="body">We build understanding, capability and capacity, so the people we work with can lead for themselves and have a better experience.</p>
+      <p class="body">We bring the courage to think outside the box, depth that speaks to the values and behaviours that strengthen an organisation's culture, and structure that protects the fundamentals and essence of the agreed kaupapa. Here, accountability and responsibility are exercised properly.</p>
     </div>
   </section>
 
   <section class="services" id="services" aria-labelledby="h-services">
     <div class="wrap">
       <div class="head">
-        <div><span class="eyebrow">Where we focus</span><h2 id="h-services">From aspiration to enterprise</h2></div>
-        <p>We want more people backing themselves in business, and hapū and whānau building enterprises that last. That's where we put our energy.</p>
+        <div><span class="eyebrow">Services</span><h2 id="h-services">How can we help?</h2></div>
+        <p>We want more people realising their full potential, whether in business, in strategic operations, within their whānau or serving their community.</p>
       </div>
       <div class="svc-grid focus">
-        <div class="svc"><h3>Hapū and whānau ventures</h3><p>From aspiration to a working enterprise. Right people, right skills, right kaupapa, working side by side towards kotahitanga.</p></div>
+        <div class="svc"><h3>Hapū development</h3><p>Every hapū is different, and so are its development needs. We help take aspirational ideas and develop practical models that support mana motuhake: right people, right skills, right kaupapa.</p></div>
         <div class="svc"><h3>Whenua-based development</h3><p>Shaping the plan, structure and partnerships for investment and development on whenua, so the opportunity serves the people it belongs to.</p></div>
-        <div class="svc"><h3>Start-ups</h3><p>Getting a new business off the ground on solid footing: a clear plan, the right structure and honest advice from day one.</p></div>
-        <div class="svc"><h3>Capability that stays</h3><p>Coaching, wānanga and workshops for trustees, founders and teams, so your people can carry the venture themselves.</p></div>
+        <div class="svc"><h3>Whānau social enterprise</h3><p>Getting a new business off the ground on solid footing: a clear plan, the right structure and honest advice from day one.</p></div>
+        <div class="svc"><h3>Building capability and capacity</h3><p>Facilitation, coaching, wānanga and workshops so your teams can thrive.</p></div>
       </div>
       <div class="also">
         <h3>Iwi, agencies and larger organisations</h3>
         <p>Scoped projects only, by conversation.</p>
       </div>
-    </div>
-  </section>
 
-  <section class="clarity cloud" id="clarity" aria-labelledby="h-clarity">
-    <div class="wrap">
-      <div>
-        <span class="eyebrow">Where we start</span>
-        <h2 id="h-clarity">The Clarity Session</h2>
+      <div class="pair">
+        <div class="panel dark">
+          <span class="eyebrow">Where we start</span>
+          <h3>The Strategy Session</h3>
+          <p>A 30-minute discussion to understand:</p>
+          <ul class="cover"><li>Your situation</li><li>Your intentions</li><li>Your current capability and capacity</li><li>Your commitment</li></ul>
+          <p>From there, we develop a personalised <b>Call to Action Plan</b> to help you decide the way forward.</p>
+          <p class="small">Financial, accounting and legal advice sit with your own professionals. We'll tell you when you need them.</p>
+        </div>
+        <div class="panel light">
+          <span class="eyebrow">Alignment</span>
+          <h3>Your readiness to take action</h3>
+          <p>We choose the work we take on, and only a few engagements at a time. So the question isn't just whether we're right for you. It's whether you're ready for this work.</p>
+          <p class="if">IF</p>
+          <ul>
+            <li>You're open to a different perspective.</li>
+            <li>You're willing to own your part, leaders included.</li>
+            <li>You want your own people to grow, not to depend on us.</li>
+            <li>Your kaupapa is about people, communities or the whenua doing better.</li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <p>One focused, paid session that turns where you are into a written plan for your venture: the priority, the structure you need, the first actions and who owns them. A plan you can act on, not a report for the shelf.</p>
-        <p class="small">Financial, accounting and legal advice sit with your own professionals. We'll tell you when you need them.</p>
+      <div class="pair-cta">
         <a class="btn dark" href="#contact">Get in touch</a>
+        <p class="notfor"><b>What we don't take on:</b> whole-of-iwi mandates, financial or accounting advice, product design, or open-ended retainers.</p>
       </div>
     </div>
   </section>
 
-  <section class="fit" id="fit" aria-labelledby="h-fit">
-    <div class="wrap">
-      <div>
-        <span class="eyebrow">The right fit</span>
-        <h2 id="h-fit">Are you a good fit for this work?</h2>
-        <p>We choose the work we take on, and we take on only a few engagements at a time. So the first conversation isn't just about whether we're right for you. It's about whether you're right for this work.</p>
-        <p class="stance">"I work best with leaders who want honest advice and are ready to act on it."<span class="by">Melanie Sweet, founder</span></p>
-      </div>
-      <div>
-      <p class="if">IF</p>
-      <ul>
-        <li>You're open to a different perspective.</li>
-        <li>You're willing to own your part, leaders included.</li>
-        <li>You want your own people to grow, not to depend on us.</li>
-        <li>Your kaupapa is about people, communities or the whenua doing better.</li>
-      </ul>
-      <p class="notfor"><b>What we don't take on:</b> whole-of-iwi mandates, financial or accounting advice, product design, or open-ended retainers.</p>
-      <a class="btn dark" href="#contact">Get in touch</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="cloud" aria-labelledby="h-how">
-    <div class="wrap photo-band">
-      <div class="veil"><img src="assets/wahine-beach-1400.jpg" alt="Wāhine standing together in the shallows at dusk during a karanga wānanga in Ōtaki" width="1400" height="1050"></div>
-      <div>
-        <span class="eyebrow">How we work</span>
-        <h2 id="h-how">Unlocking your potential</h2>
-        <div class="principles">
-          <div><h3>People centred</h3><p>Every engagement starts with the people it serves and the relationships between them.</p></div>
-          <div><h3>Mana motuhake</h3><p>We strengthen people's ability to decide and act for themselves.</p></div>
-          <div><h3>Built to last</h3><p>We favour lasting results over quick wins, and leave capability behind when we go.</p></div>
+  <section class="approach cloud" id="approach" aria-labelledby="h-how">
+    <div class="wrap appr">
+      <figure class="appr-photo">
+        <img src="assets/wahine-beach-1400.jpg" alt="Wāhine standing together in the shallows at dusk during a karanga wānanga in Ōtaki" width="1400" height="1050">
+        <figcaption>
+          <span class="eyebrow">Approach</span>
+          <h2 id="h-how">Unlocking your potential</h2>
+          <p>Every engagement leads to a Te Ahu Action Plan, built on the same values, practice and methodology as AHU, and focused on your organisation.</p>
+        </figcaption>
+      </figure>
+      <div class="plancard" aria-label="The Te Ahu Action Plan">
+        <div class="pc-head"><span>Te Ahu Action Plan</span><span class="pc-dot" aria-hidden="true"></span></div>
+        <div class="pc-mirror"><b>The Mirror</b><p>An honest reflection of where your organisation stands, at a strategic level.</p></div>
+        <div class="pc-grid">
+          <div><span class="n">1</span><span class="t"><b>Priority</b><p>The one thing your organisation should focus on now.</p></span></div>
+          <div><span class="n">1</span><span class="t"><b>Behavioural Shift</b><p>The change in how your people lead and work that will make the biggest difference.</p></span></div>
+          <div><span class="n">3</span><span class="t"><b>Actions</b><p>Practical, strategic steps, in the order they matter.</p></span></div>
+          <div><span class="n">1</span><span class="t"><b>Accountability</b><p>Who owns progress, and how you'll check in on it.</p></span></div>
         </div>
       </div>
     </div>
@@ -292,7 +343,8 @@ footer a{color:#C9D4E0}
           <p>Melanie founded Te Ahu in 2013. For Melanie, Te Ahu was about finding her pathway to her roots: the whakapapa that connects her to her tūpuna and whenua.</p>
           <p>She moved to Australia at ten and spent twenty-five years there, where mentors who saw her potential early gave her a strong professional foundation. Coming home to Aotearoa in 2006 reconnected her with Te Ao Māori and with who she is.</p>
           <p>For the past ten years she has committed that experience to hapū development, bringing her commercial and corporate background to the forefront for the benefit of Māori and the growing Māori economy. Today she brings both worlds together: professional rigour and a deep respect for tikanga, helping hapū, whānau and founders build ventures that last. She is also the founder of AHU, a guided coaching experience for individuals.</p>
-          <p><a href="melanie.html" style="font-weight:600">Read Melanie's story</a></p>
+          <p class="quote">"I work best with leaders who want honest advice and are ready to act on it."<span>Melanie Sweet</span></p>
+          <p><a href="melanie.html" style="font-weight:600">Read more about Melanie</a></p>
         </div>
       </div>
     </div>
@@ -322,8 +374,6 @@ footer a{color:#C9D4E0}
         <span class="eyebrow">Contact</span>
         <h2 id="h-contact">Get in touch</h2>
         <p>Tell us a little about what you're working on, and we'll be in touch.</p>
-        <p class="alt">Prefer email? <a class="email-sm" href="mailto:support@teahusolutions.com">support@teahusolutions.com</a></p>
-        <p class="where">Based in Te Tai Tokerau, working across Aotearoa.</p>
       </div>
       <form class="cform" id="cform" action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="7f6b6b27-2bf0-4f53-b5ea-9755d62e6141">
@@ -333,9 +383,11 @@ footer a{color:#C9D4E0}
         <label for="cf-name">Your name<input id="cf-name" name="name" required autocomplete="name"></label>
         <label for="cf-email">Email<input id="cf-email" name="email" type="email" required autocomplete="email"></label>
         <label for="cf-org"><em class="lt">Organisation or kaupapa <span>(optional)</span></em><input id="cf-org" name="organisation" autocomplete="organization"></label>
-        <label for="cf-msg">What are you working on?<textarea id="cf-msg" name="message" rows="5" required></textarea></label>
-        <button class="btn" type="submit">Send</button>
+        <label for="cf-msg"><em class="lt">What's happening? <span>Describe the situation in your own words.</span></em><textarea id="cf-msg" name="message" rows="5" required></textarea></label>
+        <button class="btn" type="submit">Submit</button>
         <p class="status" id="cf-status" role="status" aria-live="polite"></p>
+        <p class="alt">Prefer email? <a class="email-sm" href="mailto:support@teahusolutions.com">support@teahusolutions.com</a></p>
+        <p class="where">Based in Te Tai Tokerau, working across Aotearoa.</p>
       </form>
     </div>
   </section>
@@ -345,7 +397,7 @@ footer a{color:#C9D4E0}
   <div class="wrap">
     <img src="assets/te-ahu-solutions-white.svg" alt="Te Ahu Solutions" width="57" height="34">
     <span>© 2026 Te Ahu Solutions Ltd. All rights reserved.</span>
-    <a href="https://ahucoach.com">AHU Coach</a>
+    <nav class="flinks" aria-label="Footer"><ul><li><a href="#questions">FAQs</a></li><li><a href="#contact">Contact</a></li><li><a href="https://ahucoach.com">AHU Coach</a></li></ul></nav>
   </div>
 </footer>
 
@@ -361,7 +413,7 @@ footer a{color:#C9D4E0}
 (function(){var f=document.getElementById('cform');if(!f)return;var st=document.getElementById('cf-status');
 f.addEventListener('submit',function(e){e.preventDefault();var b=f.querySelector('button');b.disabled=true;st.textContent='Sending…';
 fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)}).then(function(r){return r.json();}).then(function(d){
-if(d.success){f.reset();st.textContent='Thank you. Your message is on its way, and I\'ll be in touch.';}else{st.textContent='Sorry, that didn\'t send. Please email support@teahusolutions.com.';}
+if(d.success){f.reset();st.textContent='Thank you. Your message is on its way, and we\'ll be in touch.';}else{st.textContent='Sorry, that didn\'t send. Please email support@teahusolutions.com.';}
 }).catch(function(){st.textContent='Sorry, that didn\'t send. Please email support@teahusolutions.com.';}).finally(function(){b.disabled=false;});});})();
 </script>
 </body>
