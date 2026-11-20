@@ -273,6 +273,87 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
   .bring,.hl{grid-template-columns:1fr}
   .journey li{grid-template-columns:1fr;gap:6px}
 }
+.m-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.m-actions .btn{margin:0;border:0;cursor:pointer;font-family:var(--body);font-size:16px;font-weight:600;line-height:1.2;padding:14px 22px}
+.m-actions .btn.line{background:transparent;color:var(--navy);box-shadow:inset 0 0 0 1.5px var(--navy)}
+.btn.line:hover{background:var(--cloud)}
+.hl{grid-template-columns:repeat(2,minmax(0,1fr))}
+.roles{list-style:none;margin:28px 0 0;padding:0;display:grid}
+.roles > li{padding:24px 0;border-top:1px solid #D5DAE0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:8px 40px}
+.roles > li:last-child{border-bottom:1px solid #D5DAE0}
+.r-top{display:grid;gap:4px;align-content:start}
+.r-top h3{font-size:21px;color:var(--navy);margin:0}
+.r-date{font-size:14px;font-weight:600;letter-spacing:.04em;color:#5E7590}
+.r-org{margin:4px 0 0;color:var(--graphite)}
+.roles > li > ul{margin:0;padding-left:18px;display:grid;gap:6px;color:var(--graphite)}
+.earlier{margin-top:36px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.earlier div:last-child{grid-column:1 / -1}
+.earlier div{background:var(--cloud);border-radius:4px;padding:24px 26px}
+.earlier h3{font-size:19px;color:var(--navy);margin:0 0 8px}
+.earlier p{margin:0;color:var(--graphite);font-size:15px;line-height:1.6}
+.contact{background:var(--navy);color:#fff}
+.contact .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
+.contact h2{color:#fff;font-size:clamp(30px,4vw,44px);margin:12px 0 16px}
+.contact p{color:#D6DEE8}
+.cform{display:grid;gap:14px}
+.cform label{display:grid;gap:6px;font-size:14px;font-weight:600;color:#DCE4EC}
+.cform label .lt{font-style:normal}
+.cform label span{font-weight:400;color:#9DAEC2}
+.cform input,.cform textarea{font:16px var(--body);color:var(--navy);background:#fff;border:1px solid #9DAEC2;border-radius:3px;padding:12px 14px;width:100%}
+.cform input:focus,.cform textarea:focus{outline:3px solid var(--steel);outline-offset:1px}
+.cform .btn{margin-top:6px;justify-self:start;border:0;cursor:pointer;font-family:var(--body)}
+.cform .hp{display:none}
+.cform .status{margin:0;font-size:15px;color:#fff;min-height:1.4em}
+@media (max-width:860px){.hl,.earlier,.contact .wrap,.roles > li{grid-template-columns:1fr}.roles > li > ul{grid-column:1;grid-row:auto}}
+@media print{
+  @page{size:A4;margin:14mm 14mm 14mm 14mm}
+  header.site,.skip,.m-actions,.contact,footer,section[aria-labelledby="h-build"]{display:none!important}
+  html,body{background:#fff!important;color:#111;font-size:9.5pt;line-height:1.45}
+  .wrap{max-width:none!important;padding:0!important}
+  section{padding-block:8pt!important;background:#fff!important;color:#111!important}
+  .eyebrow{font-size:7.5pt!important;color:#5E7590!important;letter-spacing:.14em}
+  .sec-h{font-size:15pt!important;margin:2pt 0 6pt!important}
+  .m-intro .wrap{display:grid!important;grid-template-columns:90pt 1fr!important;gap:16pt!important;align-items:start}
+  .m-intro img{width:90pt!important;height:auto;border-radius:4pt}
+  .m-intro h1{font-size:24pt!important;margin:2pt 0!important}
+  .m-intro .line{font-size:12pt!important;margin:0 0 6pt!important}
+  .lead p{margin:0 0 5pt!important}
+  .pepeha .wrap{display:grid!important;grid-template-columns:150pt 1fr!important;gap:16pt!important}
+  .pepeha h2{font-size:15pt!important;color:#16273F!important}
+  .pepeha *{color:#111!important}
+  .pepeha ol{border-left:1px solid #8FA3BA!important;padding-left:10pt!important;margin:0!important}
+  .pepeha li{font-size:10pt!important;margin:0 0 2pt!important}
+  .pepeha .kaupapa-line{font-size:10.5pt!important;margin:4pt 0!important}
+  .hl{grid-template-columns:1fr 1fr!important;gap:0 18pt!important}
+  .hl li{padding:5pt 0 5pt 14pt!important}
+  .hl li::before{top:11pt!important;width:8pt!important}
+  .roles{margin-top:4pt!important}
+  .roles > li{grid-template-columns:150pt 1fr!important;gap:2pt 16pt!important;padding:6pt 0!important}
+  .r-top h3{font-size:11pt!important}
+  .r-date{font-size:8pt!important}
+  .roles > li > ul{gap:1pt!important}
+  .earlier{grid-template-columns:1fr 1fr!important;gap:8pt!important;margin-top:8pt!important}
+  .earlier div{padding:7pt 9pt!important;background:#F2F4F7!important}
+  .earlier h3{font-size:10.5pt!important;margin:0 0 3pt!important}
+  .earlier p{font-size:8.8pt!important}
+  .bring{grid-template-columns:1fr 1fr!important;gap:6pt!important}
+  .bring div{padding:7pt 9pt!important}
+  .bring h3{font-size:10.5pt!important}
+  .sec-p,.stance{font-size:9.5pt!important;margin:0 0 6pt!important}
+  .stance{border-left:2px solid #8FA3BA;padding-left:8pt}
+  .wk{padding-block:6pt!important;text-align:center}
+  .wk blockquote{font-size:11pt!important;margin:0 auto 3pt!important}
+  .wk .en,.wk .who{font-size:8.5pt!important;margin:0!important}
+  .roles > li,.hl li,.earlier div,.bring div,.wk{break-inside:avoid}
+  h2,h3,.eyebrow{break-after:avoid}
+  .roles > li > ul{grid-column:2!important;grid-row:1!important;margin:0!important}
+  .pepeha .en{font-size:9pt!important}
+  section[aria-labelledby="h-how"]{display:none!important}
+  .wk .en{text-align:center!important;max-width:none!important;margin:0 auto!important}
+  .print-only{display:block!important;text-align:center;font-size:8.5pt;color:#5E7590;margin-top:8pt}
+  a{color:#111;text-decoration:none}
+}
+}
 </style>
 </head>
 <body>
@@ -282,7 +363,7 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
     <a class="logo" href="./" aria-label="Te Ahu Solutions, home"><img src="assets/te-ahu-solutions-white.svg" alt="Te Ahu Solutions" width="70" height="42"></a>
     <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="main-nav">Menu</button>
     <nav class="main" id="main-nav" aria-label="Main">
-      <a href="./">Home</a><a href="./#services">Services</a><a href="./#approach">Approach</a><a href="./#about" aria-current="page">About</a><a href="./#ahu">AHU</a><a href="./#contact">Contact</a>
+      <a href="./#kaupapa">Change</a><a href="./#services">Services</a><a href="./#approach">Action Plan</a><a href="./#about" aria-current="page">Founder</a><a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
@@ -291,13 +372,14 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
 <section class="m-intro"><div class="wrap">
   <img src="assets/melanie-olive-640.jpg" alt="Melanie Sweet" width="640" height="800">
   <div>
-    <span class="eyebrow">Founder, Te Ahu Solutions and AHU</span>
+    <span class="eyebrow">Founder, Te Ahu Solutions and AHU Coach</span>
     <h1>Melanie Sweet</h1>
-    <p class="line">Commercial rigour. Kaupapa Māori depth.</p>
+    <p class="line">Change leadership. Kaupapa Māori depth.</p>
     <div class="lead">
-      <p>I build ventures, and I help hapū, whānau and founders build theirs. Through Te Ahu Solutions I work alongside a few ventures at a time. Through AHU, I'm putting the same thinking into more people's hands.</p>
-      <p>Behind it is almost forty years across very different worlds: a commercial career in Australia's oil and gas, mining, engineering and construction sectors, then, since coming home in 2006, government, iwi and hapū. For the past ten years my commitment has been hapū development and a growing Māori economy.</p>
+      <p>I lead change, and I help organisations lead it well, at governance, strategic, operational and project level. Through Te Ahu Solutions I work alongside a small number of organisations at a time. Through AHU Coach, I'm putting the same thinking into more people's hands.</p>
+      <p>Behind it is almost forty years across very different worlds: a commercial career in Australia's oil and gas, mining, engineering and construction sectors, then, since coming home in 2006, central government, iwi and hapū. For the past decade my commitment has been hapū development and a growing Māori economy.</p>
     </div>
+    <div class="m-actions"><a class="btn dark" href="#contact">Get in touch</a><button class="btn line" type="button" onclick="window.print()">Download CV (PDF)</button></div>
   </div>
 </div></section>
 
@@ -315,7 +397,33 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
   </ol>
 </div></section>
 
-<section aria-labelledby="h-how"><div class="wrap">
+<section class="cloud" aria-labelledby="h-high"><div class="wrap">
+  <span class="eyebrow">Career highlights</span>
+  <h2 class="sec-h" id="h-high">Change, at every scale</h2>
+  <ul class="hl">
+    <li><b>Organisational change.</b> Directed a major change programme moving 2,500 staff into Wellington's Asteron House.</li>
+    <li><b>Kura investment.</b> Designed Hei Piringa Wānanga, a Māori property investment framework adopted for long-term kura investment planning.</li>
+    <li><b>Portfolio leadership.</b> Led strategic property planning and investment across 35 kura in Te Tai Tokerau.</li>
+    <li><b>Commercial delivery.</b> Managed more than 140 international vendors on a major nickel-cobalt plant refurbishment.</li>
+    <li><b>Māori enterprise.</b> Helped establish the Te Hiku Māori Farming Collective to strengthen regional economic participation.</li>
+    <li><b>Executive leadership.</b> Led strategy, organisational performance and transformation for a kaupapa Māori organisation.</li>
+  </ul>
+</div></section>
+
+<section aria-labelledby="h-exp"><div class="wrap">
+  <span class="eyebrow">Experience</span>
+  <h2 class="sec-h" id="h-exp">Where I've led</h2>
+  <ol class="roles">
+<li><div class="r-top"><h3>Director</h3><span class="r-date">2013 – present</span><p class="r-org">Te Ahu Solutions Ltd · Te Tai Tokerau</p></div><ul><li>Change leadership and organisational development</li><li>Governance support and strategic planning</li><li>Capability building, and Māori economic and enterprise development</li></ul></li><li><div class="r-top"><h3>General Manager (Tai Niwhaniwha)</h3><span class="r-date">2024 – 2026</span><p class="r-org">Te Rarawa Anga Mua · Kaitaia</p></div><ul><li>Executive leadership for strategy, organisational performance and transformation, aligned to Te Rarawa Group priorities</li><li>Partnered with governance, government agencies, funders, hapū and community stakeholders</li><li>Led financial stewardship, service delivery and organisational capability through kaupapa Māori approaches</li></ul></li><li><div class="r-top"><h3>Senior Property Advisor</h3><span class="r-date">2021 – 2024</span><p class="r-org">Ministry of Education · Kaitaia</p></div><ul><li>Led strategic property planning and investment across 35 kura, influencing multi-million-dollar capital decisions</li><li>Designed and implemented Hei Piringa Wānanga, aligning kura and hapū aspirations with investment priorities</li></ul></li><li><div class="r-top"><h3>Programme Director</h3><span class="r-date">2018 – 2020</span><p class="r-org">Te Hiku Iwi Development Trust · Kaitaia</p></div><ul><li>Led programmes supporting Crown–iwi engagement, system change and regional development</li><li>Policy and system reform, stakeholder engagement and cross-sector collaboration</li></ul></li>
+  </ol>
+  <div class="earlier">
+    <div><h3>Earlier career in Aotearoa</h3><p>Senior leadership, project management, change management, property, commercial and economic development roles with the Ministry for Primary Industries (Regional Economic Development), MBIE (Change Management), the Ministry of Social Development (Social Housing), Oranga Tamariki (Change Management), Inland Revenue (Property, Capital Delivery and IT Change Management), IHC New Zealand, Northland Inc., Te Waka Pūpuri Pūtea and the Agri-Women's Development Trust.</p></div>
+    <div><h3>Commercial career in Australia</h3><p>Roles with Esso Australia, Hatch Engineering Associates, Melbourne Docklands, Melbourne City Council (CityWide Service Solutions) and Indigenous enterprise initiatives, building expertise in procurement, infrastructure, contract management, operations and major capital projects.</p></div>
+    <div><h3>Governance</h3><p>Board member for two kura, overseeing capital works, property strategy and infrastructure development.</p></div>
+  </div>
+</div></section>
+
+<section class="cloud" aria-labelledby="h-how"><div class="wrap">
   <span class="eyebrow">How I work</span>
   <h2 class="sec-h" id="h-how">Honest advice, shared accountability</h2>
   <p class="sec-p">The feedback I hear most is that I'm honest. I believe good work rests on transparency, accountability and people taking responsibility for their part, and I bring that to every engagement, even when it isn't the easy conversation.</p>
@@ -328,45 +436,60 @@ footer nav{display:flex;flex-wrap:wrap;gap:8px 22px}
   <p class="stance">Leadership should bring people together and put the kaupapa before ego. I work best with leaders who want honest advice and are ready to act on it.</p>
 </div></section>
 
-<section class="cloud" aria-labelledby="h-build"><div class="wrap">
+<section aria-labelledby="h-build"><div class="wrap">
   <span class="eyebrow">What I'm building</span>
   <h2 class="sec-h" id="h-build">Two ways the work reaches people</h2>
   <div class="bring">
-    <div><h3>Te Ahu Solutions</h3><p>Working alongside hapū, whānau and founders to turn aspirations into working ventures, from whenua-based development to new businesses. A few at a time, by choice.</p><p><a href="./">teahusolutions.com</a></p></div>
-    <div><h3>AHU</h3><p>A guided coaching experience that helps people make sense of what matters and shape their next step. Launching 20 November 2026.</p><p><a href="https://ahucoach.com">ahucoach.com</a></p></div>
+    <div><h3>Te Ahu Solutions</h3><p>Helping whānau, hapū and organisations lead change well, from the boardroom to the project. A small number of engagements at a time, by choice.</p><p><a href="./">teahusolutions.com</a></p></div>
+    <div><h3>AHU Coach</h3><p>A guided coaching experience that helps people make sense of what matters and shape their next step, with a personal Action Plan.</p><p><a href="https://ahucoach.com">ahucoach.com</a></p></div>
   </div>
-</div></section>
-
-<section aria-labelledby="h-depth"><div class="wrap">
-  <span class="eyebrow">What I bring to a venture</span>
-  <h2 class="sec-h" id="h-depth">Depth where it counts</h2>
-  <ul class="hl">
-    <li><b>Commercial delivery.</b> Procurement, contracts, risk and capital works, including managing more than 140 international suppliers on a major industrial plant refurbishment.</li>
-    <li><b>Property and investment.</b> Long-term property and investment planning across a regional network of kura, shaped by kura and hapū aspirations.</li>
-    <li><b>Hapū and Māori enterprise.</b> Hapū capability, Māori economic development, and helping establish a Māori farming collective.</li>
-    <li><b>Governance and partnerships.</b> Board roles, executive leadership, and Crown–iwi relationships built on trust.</li>
-  </ul>
-  <p class="exp"><b>Experience across</b> commercial industry in Australia · central government · regional development · iwi and hapū organisations · kura boards</p>
 </div></section>
 
 <section class="wk" aria-label="Whakataukī"><div class="wrap">
   <blockquote>Kua tawhiti kē tō haerenga mai, kia kore e haere tonu. He tino nui rawa ōu mahi, kia kore e mahi nui tonu.</blockquote>
   <p class="en">You have come too far, not to go further. You have done too much, not to do more.</p>
   <p class="who">Sir James Henare</p>
-  <a class="btn dark" href="./#contact">Get in touch</a>
+  <p class="print-only" style="display:none">Contact Melanie: teahusolutions.com/melanie.html</p>
+</div></section>
+
+<section class="contact" id="contact" aria-labelledby="h-contact"><div class="wrap">
+  <div>
+    <span class="eyebrow">Contact</span>
+    <h2 id="h-contact">Get in touch with Melanie</h2>
+    <p>Whether it's a role, an engagement or a kōrero, send a message and I'll be in touch.</p>
+  </div>
+  <form class="cform" id="cform" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="7f6b6b27-2bf0-4f53-b5ea-9755d62e6141">
+        <input type="hidden" name="subject" value="Enquiry for Melanie from teahusolutions.com">
+        <input type="hidden" name="from_name" value="Te Ahu Solutions website (founder page)">
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label for="cf-name">Your name<input id="cf-name" name="name" required autocomplete="name"></label>
+        <label for="cf-email">Email<input id="cf-email" name="email" type="email" required autocomplete="email"></label>
+        <label for="cf-org"><em class="lt">Organisation <span>(optional)</span></em><input id="cf-org" name="organisation" autocomplete="organization"></label>
+        <label for="cf-msg"><em class="lt">Your message</em><textarea id="cf-msg" name="message" rows="5" required></textarea></label>
+        <button class="btn" type="submit">Submit</button>
+        <p class="status" id="cf-status" role="status" aria-live="polite"></p>
+        </form>
 </div></section>
 </main>
 <footer>
   <div class="wrap">
     <img src="assets/te-ahu-solutions-white.svg" alt="Te Ahu Solutions" width="57" height="34">
     <span>© 2013–2026 Te Ahu Solutions Ltd. All rights reserved.</span>
-    <nav class="flinks" aria-label="Footer"><ul><li><a href="index.html">Home</a></li><li><a href="index.html#contact">Contact</a></li><li><a href="https://ahucoach.com">AHU Coach</a></li></ul></nav>
+    <nav class="flinks" aria-label="Footer"><ul><li><a href="index.html">Home</a></li><li><a href="#contact">Contact</a></li><li><a href="https://ahucoach.com">AHU Coach</a></li></ul></nav>
   </div>
 </footer>
 <script>
 (function(){var b=document.getElementById('menu-btn'),n=document.getElementById('main-nav');if(!b||!n)return;
 b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});
 n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false');}});})();
+</script>
+<script>
+(function(){var f=document.getElementById('cform');if(!f)return;var st=document.getElementById('cf-status');
+f.addEventListener('submit',function(e){e.preventDefault();var b=f.querySelector('button');b.disabled=true;st.textContent='Sending…';
+fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)}).then(function(r){return r.json();}).then(function(d){
+if(d.success){f.reset();st.textContent='Thank you. Your message is on its way, and we\'ll be in touch.';}else{st.textContent='Sorry, that didn\'t send. Please email support@teahusolutions.com.';}
+}).catch(function(){st.textContent='Sorry, that didn\'t send. Please email support@teahusolutions.com.';}).finally(function(){b.disabled=false;});});})();
 </script>
 </body>
 </html>
