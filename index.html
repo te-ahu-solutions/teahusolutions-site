@@ -301,6 +301,33 @@ footer a{color:#C9D4E0}
 .levels.top{margin:0}
 .levels.top .lv-head{max-width:820px}.levels.top .lv-head h2{margin:12px 0 0;max-width:none}.levels.top .lv-head p{margin-top:16px}
 .kaupapa .lv-ready{background:var(--cloud)}
+.pair.solo{grid-template-columns:1fr}
+.pair.solo .panel{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:auto;column-gap:56px;grid-row:auto}
+.pair.solo .panel > .eyebrow,.pair.solo .panel > h3,.pair.solo .panel > .intro{grid-column:1}
+.pair.solo .panel > .block{grid-column:2;grid-row:1 / span 3}
+.pair.solo .panel > .note{grid-column:1 / -1}
+.contact .panel.start{margin-top:32px;background:transparent;border:1px solid rgba(185,200,216,.3);border-radius:8px;display:grid;gap:0}
+.contact .panel.start h3{margin:10px 0 12px}
+.contact .panel.start .intro{padding-bottom:18px}
+.contact .panel.start .block{display:grid;gap:10px}
+.contact .panel.start .if{color:#fff;margin:0;font-size:18px}
+.contact .panel.start ul.plist{list-style:none;margin:0;padding:0}
+.contact .panel.start ul.plist li{font-family:var(--display);font-size:17px;color:#fff;padding:10px 0 10px 26px;border-top:1px solid rgba(255,255,255,.16);position:relative}
+.contact .panel.start ul.plist li::before{content:"";position:absolute;left:0;top:21px;width:14px;height:2px;background:var(--steel)}
+.contact .panel.start .note{padding-top:18px;font-size:14px;color:#9DAEC2}
+.faq-box{margin-top:16px;max-width:860px;background:#fff;border:1px solid #DCE3EA;border-radius:8px}
+.faq-box summary{list-style:none;cursor:pointer;padding:28px 72px 28px 32px;position:relative}
+.faq-box summary::-webkit-details-marker{display:none}
+.faq-box summary .faq-h{margin:0}
+.faq-box .fb-hint{display:block;margin-top:6px;color:#5D636A}
+.faq-box summary::after{content:"+";position:absolute;right:30px;top:50%;transform:translateY(-50%);font-size:32px;color:#5E7590}
+.faq-box[open] summary::after{content:"\2212"}
+.faq-box summary:focus-visible{outline:3px solid var(--steel);outline-offset:2px}
+.fb-body{padding:0 32px 12px}
+.fb-item{border-top:1px solid #D5DAE0;padding:20px 0}
+.fb-item h3{font-family:var(--display);font-size:clamp(18px,2vw,20px);color:var(--navy);margin:0 0 8px}
+.fb-item p{margin:0;max-width:66ch}
+@media (max-width:760px){.pair.solo .panel{grid-template-columns:1fr}.pair.solo .panel > .block{grid-column:1;grid-row:auto}.faq-box summary{padding:22px 56px 22px 20px}.fb-body{padding:0 20px 8px}}
 </style>
 </head>
 <body>
@@ -312,9 +339,9 @@ footer a{color:#C9D4E0}
     <nav class="main" id="main-nav" aria-label="Main">
       <a href="#kaupapa">Change</a>
       <a href="#services">Services</a>
-      <a href="#approach">Approach</a>
-      <a href="#voices">Clients</a>
+      <a href="#approach">Action Plan</a>
       <a href="#about">Founder</a>
+      <a href="#voices">Clients</a>
       <a href="#questions">Expect</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -357,14 +384,7 @@ footer a{color:#C9D4E0}
       <p class="also2"><b>Iwi, agencies and larger organisations</b><span>Scoped projects only, by conversation.</span></p>
 
 
-      <div class="pair">
-        <div class="panel dark">
-          <span class="eyebrow">Where we start</span>
-          <h3>The Strategy Session</h3>
-          <p class="intro">A 30-minute discussion. From there, we develop a personalised <b>Action Plan</b> to help you decide the way forward.</p>
-          <div class="block"><p class="if">WE LOOK AT</p><ul class="plist"><li>Your situation</li><li>Your intentions</li><li>Your capability and capacity</li><li>Your commitment</li></ul></div>
-          <p class="note">Financial, accounting and legal advice sit with your own professionals. We'll tell you when you need them.</p>
-        </div>
+      <div class="pair solo">
         <div class="panel light">
           <span class="eyebrow">Alignment</span>
           <h3>Is this the right fit?</h3>
@@ -384,7 +404,7 @@ footer a{color:#C9D4E0}
       <figure class="appr-photo">
         <img src="assets/wahine-beach-1400.jpg" alt="Wāhine standing together in the shallows at dusk during a karanga wānanga in Ōtaki" width="1400" height="1050">
         <figcaption>
-          <span class="eyebrow">Approach</span>
+          <span class="eyebrow">Action Plan</span>
           <h2 id="h-how">Unlocking your potential</h2>
           <p>Every engagement leads to a Te Ahu Solutions Action Plan, built on the same values, practice and methodology as AHU Coach, and focused on your organisation.</p>
         </figcaption>
@@ -397,19 +417,6 @@ footer a{color:#C9D4E0}
           <div><span class="n">1</span><span class="t"><b>Behavioural Shift</b><p>The change in how your people lead and work that will make the biggest difference.</p></span></div>
           <div><span class="n">3</span><span class="t"><b>Actions</b><p>Practical, strategic steps, in the order they matter.</p></span></div>
           <div><span class="n">1</span><span class="t"><b>Accountability</b><p>Who owns progress, and how you'll check in on it.</p></span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="voices" id="voices" aria-labelledby="h-voices">
-    <div class="wrap">
-      <h2 id="h-voices">What our clients say</h2>
-      <div class="v-grid">
-        <figure class="v-lead"><blockquote>“Cultivated great thoughts and pushed for clear articulation of all present. Created a safe space for clarity of roles and direction.”</blockquote><figcaption>Executive Manager, Ngāti Hine Health Trust</figcaption></figure>
-        <div class="v-side">
-          <figure><blockquote>“A worthwhile day, lots of learning good investment of time being here together. Feeling more invested in the North star.”</blockquote><figcaption>Manager, Ngāti Hine Health Trust</figcaption></figure>
-          <figure><blockquote lang="mi">“Amazing! Tēnā rawa atu koe Melanie! Ngā mihi mō tō mātauranga, whakaaro, āhua!”</blockquote><figcaption>Manager, Ngāti Hine Health Trust</figcaption></figure>
         </div>
       </div>
     </div>
@@ -442,11 +449,23 @@ footer a{color:#C9D4E0}
     </div>
   </section>
 
+  <section class="voices" id="voices" aria-labelledby="h-voices">
+    <div class="wrap">
+      <h2 id="h-voices">What our clients say</h2>
+      <div class="v-grid">
+        <figure class="v-lead"><blockquote>“Cultivated great thoughts and pushed for clear articulation of all present. Created a safe space for clarity of roles and direction.”</blockquote><figcaption>Executive Manager, Ngāti Hine Health Trust</figcaption></figure>
+        <div class="v-side">
+          <figure><blockquote>“A worthwhile day, lots of learning good investment of time being here together. Feeling more invested in the North star.”</blockquote><figcaption>Manager, Ngāti Hine Health Trust</figcaption></figure>
+          <figure><blockquote lang="mi">“Amazing! Tēnā rawa atu koe Melanie! Ngā mihi mō tō mātauranga, whakaaro, āhua!”</blockquote><figcaption>Manager, Ngāti Hine Health Trust</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="cloud" id="questions" aria-labelledby="h-faq">
     <div class="wrap">
       <span class="eyebrow">Questions</span>
-      <h2 id="h-faq" class="faq-h">What to expect</h2>
-      <div class="qa"><details><summary>How do you choose who you work with?</summary><p>We choose our work deliberately. We take on a small number of engagements at a time, and only where the kaupapa, the people and the timing are right.</p></details><details><summary>What happens first?</summary><p>A free 30-minute conversation, so we can both decide if we're the right fit. If we are, you'll get a clear scope and fee, agreed in writing before any work begins. Everything you share stays confidential.</p></details><details><summary>What will we walk away with?</summary><p>A Te Ahu Solutions Action Plan: an honest reflection of where you stand, the one priority that matters most, the shift that will make the difference, and clear actions with an owner.</p></details><details><summary>Is this a quick fix?</summary><p>No. Change takes time to adopt, and trust is built over a hundred cups of tea. Where the work genuinely needs it, we can stay alongside you on a retainer. We'll only suggest one if the work requires it, never to keep you on the books.</p></details><details><summary>Who will we work with?</summary><p>Melanie Sweet leads every engagement. We bring in trusted specialists only where the work needs them, and we refer legal, accounting and financial matters to the right professionals.</p></details><details><summary>What do you expect from us?</summary><p>Honesty, and a readiness to act. We'll be straight with you, and we ask the same in return.</p></details></div>
+      <details class="faq-box"><summary><h2 id="h-faq" class="faq-h">What to expect</h2><span class="fb-hint">Six things to know before we start</span></summary><div class="fb-body"><div class="fb-item"><h3>How do you choose who you work with?</h3><p>We choose our work deliberately. We take on a small number of engagements at a time, and only where the kaupapa, the people and the timing are right.</p></div><div class="fb-item"><h3>What happens first?</h3><p>A free 30-minute conversation, so we can both decide if we're the right fit. If we are, you'll get a clear scope and fee, agreed in writing before any work begins. Everything you share stays confidential.</p></div><div class="fb-item"><h3>What will we walk away with?</h3><p>A Te Ahu Solutions Action Plan: an honest reflection of where you stand, the one priority that matters most, the shift that will make the difference, and clear actions with an owner.</p></div><div class="fb-item"><h3>Is this a quick fix?</h3><p>No. Change takes time to adopt, and trust is built over a hundred cups of tea. Where the work genuinely needs it, we can stay alongside you on a retainer. We'll only suggest one if the work requires it, never to keep you on the books.</p></div><div class="fb-item"><h3>Who will we work with?</h3><p>Melanie Sweet leads every engagement. We bring in trusted specialists only where the work needs them, and we refer legal, accounting and financial matters to the right professionals.</p></div><div class="fb-item"><h3>What do you expect from us?</h3><p>Honesty, and a readiness to act. We'll be straight with you, and we ask the same in return.</p></div></div></details>
     </div>
   </section>
 
@@ -456,6 +475,13 @@ footer a{color:#C9D4E0}
         <span class="eyebrow">Contact</span>
         <h2 id="h-contact">Get in touch</h2>
         <p>Tell us a little about what you're working on, and we'll be in touch.</p>
+        <div class="panel dark start">
+          <span class="eyebrow">Where we start</span>
+          <h3>The Strategy Session</h3>
+          <p class="intro">A 30-minute discussion. From there, we develop a personalised <b>Action Plan</b> to help you decide the way forward.</p>
+          <div class="block"><p class="if">WE LOOK AT</p><ul class="plist"><li>Your situation</li><li>Your intentions</li><li>Your capability and capacity</li><li>Your commitment</li></ul></div>
+          <p class="note">Financial, accounting and legal advice sit with your own professionals. We'll tell you when you need them.</p>
+        </div>
       </div>
       <form class="cform" id="cform" action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="7f6b6b27-2bf0-4f53-b5ea-9755d62e6141">
