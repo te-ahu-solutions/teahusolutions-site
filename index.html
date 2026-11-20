@@ -270,6 +270,20 @@ footer a{color:#C9D4E0}
   .about{grid-template-columns:1fr;gap:28px}
   .svc-grid{grid-template-columns:1fr}
 }
+.voices{background:var(--navy);color:#fff;padding-block:clamp(64px,9vw,112px)}
+.voices .eyebrow{color:#B9C8D8}
+.voices h2{color:#fff;margin:12px 0 40px}
+.v-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:56px;align-items:start}
+.voices figure{margin:0}
+.voices blockquote{margin:0;font-family:var(--display);color:#fff}
+.voices figcaption{margin-top:14px;font-size:14px;letter-spacing:.02em;color:#B9C8D8}
+.v-lead{border-left:3px solid var(--steel);padding-left:28px}
+.v-lead blockquote{font-size:clamp(24px,2.8vw,32px);line-height:1.35}
+.v-side{display:grid}
+.v-side figure{padding:22px 0;border-top:1px solid rgba(185,200,216,.28)}
+.v-side figure:first-child{padding-top:0;border-top:0}
+.v-side blockquote{font-size:19px;line-height:1.5}
+@media (max-width:860px){.v-grid{grid-template-columns:1fr;gap:36px}.v-side figure:first-child{padding-top:22px;border-top:1px solid rgba(185,200,216,.28)}}
 </style>
 </head>
 <body>
@@ -375,6 +389,20 @@ footer a{color:#C9D4E0}
           <div><span class="n">1</span><span class="t"><b>Behavioural Shift</b><p>The change in how your people lead and work that will make the biggest difference.</p></span></div>
           <div><span class="n">3</span><span class="t"><b>Actions</b><p>Practical, strategic steps, in the order they matter.</p></span></div>
           <div><span class="n">1</span><span class="t"><b>Accountability</b><p>Who owns progress, and how you'll check in on it.</p></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="voices" id="voices" aria-labelledby="h-voices">
+    <div class="wrap">
+      <span class="eyebrow">In their words</span>
+      <h2 id="h-voices">What our clients say</h2>
+      <div class="v-grid">
+        <figure class="v-lead"><blockquote>“Cultivated great thoughts and pushed for clear articulation of all present. Created a safe space for clarity of roles and direction.”</blockquote><figcaption>Executive Manager, Ngāti Hine Health Trust</figcaption></figure>
+        <div class="v-side">
+          <figure><blockquote>“A worthwhile day, lots of learning good investment of time being here together. Feeling more invest in the North star.”</blockquote><figcaption>Manager, Ngāti Hine Health Trust</figcaption></figure>
+          <figure><blockquote lang="mi">“Amazing! Tēnā rawa atu koe Melanie! Ngā mihi mō tō mātauranga, whakaaro, āhua!”</blockquote><figcaption>Manager, Ngāti Hine Health Trust</figcaption></figure>
         </div>
       </div>
     </div>
