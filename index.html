@@ -343,6 +343,14 @@ footer a{color:#C9D4E0}
 .pc-cascade li::before{content:"";position:absolute;left:0;top:14px;width:10px;height:10px;border-radius:50%;background:var(--navy);box-shadow:0 0 0 4px #fff}
 .pc-cascade b{font-family:var(--display);font-size:18px;color:var(--navy);font-weight:600}
 .pc-cascade span{font-size:15px;color:#4A5059}
+@media (min-width:961px){
+.appr{grid-template-columns:1fr!important;gap:28px}
+.appr-photo{min-height:0!important;aspect-ratio:21/9}
+.appr-photo img{object-position:center 62%}
+.plancard{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);column-gap:48px}
+.plancard .pc-head,.plancard .pc-mirror{grid-column:1 / -1}
+.pc-receives{display:grid;gap:18px;align-content:start}
+}
 </style>
 </head>
 <body>
@@ -434,13 +442,14 @@ footer a{color:#C9D4E0}
             <li><b>Project</b><span>Delivers the change on the ground</span></li>
           </ol>
         </div>
-        <p class="pc-sub">Each level receives</p>
+        <div class="pc-receives"><p class="pc-sub">Each level receives</p>
         <div class="pc-grid">
           <div><span class="n">1</span><span class="t"><b>Priority</b><p>The one thing that level should focus on now.</p></span></div>
           <div><span class="n">1</span><span class="t"><b>Behavioural Shift</b><p>The change in how people at that level lead and work.</p></span></div>
           <div><span class="n">3</span><span class="t"><b>Actions</b><p>Practical steps, in the order they matter.</p></span></div>
           <div><span class="n">1</span><span class="t"><b>Accountability</b><p>One owner for that level, and how you'll check in.</p></span></div>
         </div>
+</div>
       </div>
     </div>
   </section>
@@ -488,7 +497,7 @@ footer a{color:#C9D4E0}
   <section class="cloud" id="questions" aria-labelledby="h-faq">
     <div class="wrap">
       <span class="eyebrow">FAQs</span>
-      <details class="faq-box"><summary><h2 id="h-faq" class="faq-h">What to expect</h2><span class="fb-hint">Six things to know before we start</span></summary><div class="fb-body"><div class="fb-item"><h3>How do you choose who you work with?</h3><p>We choose our work deliberately. We take on a small number of engagements at a time, and only where the kaupapa, the people and the timing are right.</p></div><div class="fb-item"><h3>What happens first?</h3><p>A free 30-minute conversation, so we can both decide if we're the right fit. If we are, you'll get a clear scope and fee, agreed in writing before any work begins. Everything you share stays confidential.</p></div><div class="fb-item"><h3>What will we walk away with?</h3><p>A Te Ahu Solutions Action Plan: an honest reflection of where you stand, the one priority that matters most, the shift that will make the difference, and clear actions with an owner.</p></div><div class="fb-item"><h3>Is this a quick fix?</h3><p>No. Change takes time to adopt, and trust is built over a hundred cups of tea. Where the work genuinely needs it, we can stay alongside you on a retainer. We'll only suggest one if the work requires it, never to keep you on the books.</p></div><div class="fb-item"><h3>Who will we work with?</h3><p>Melanie Sweet leads every engagement. We bring in trusted specialists only where the work needs them, and we refer legal, accounting and financial matters to the right professionals.</p></div><div class="fb-item"><h3>What do you expect from us?</h3><p>Honesty, and a readiness to act. We'll be straight with you, and we ask the same in return.</p></div></div></details>
+      <details class="faq-box"><summary><h2 id="h-faq" class="faq-h">What to expect</h2><span class="fb-hint">Six things to know before we start</span></summary><div class="fb-body"><div class="fb-item"><h3>How do you choose who you work with?</h3><p>We choose our work deliberately. We take on a small number of engagements at a time, and only where the kaupapa, the people and the timing are right.</p></div><div class="fb-item"><h3>What happens first?</h3><p>A free 30-minute conversation, so we can both decide if we're the right fit. If we are, you'll get a clear scope and fee, agreed in writing before any work begins. Everything you share stays confidential.</p></div><div class="fb-item"><h3>What will we walk away with?</h3><p>A Te Ahu Solutions Action Plan: an honest reflection of where you stand and how ready you are, then a plan for each level your kaupapa needs. Each level receives one priority, one behavioural shift, three actions and a clear owner.</p></div><div class="fb-item"><h3>Is this a quick fix?</h3><p>No. Change takes time to adopt, and trust is built over a hundred cups of tea. Where the work genuinely needs it, we can stay alongside you on a retainer. We'll only suggest one if the work requires it, never to keep you on the books.</p></div><div class="fb-item"><h3>Who will we work with?</h3><p>Melanie Sweet leads every engagement. We bring in trusted specialists only where the work needs them, and we refer legal, accounting and financial matters to the right professionals.</p></div><div class="fb-item"><h3>What do you expect from us?</h3><p>Honesty, and a readiness to act. We'll be straight with you, and we ask the same in return.</p></div></div></details>
     </div>
   </section>
 
