@@ -335,6 +335,14 @@ footer a{color:#C9D4E0}
 .contact .wrap > div:first-child > .panel.start{grid-row:4}
 .contact .cform{grid-column:2;grid-row:4;margin-top:32px;align-self:start}
 }
+.pc-sub{margin:0;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#5E7590}
+.pc-cascade{display:grid;gap:12px}
+.pc-cascade ol{list-style:none;margin:0;padding:0;display:grid;position:relative}
+.pc-cascade ol::before{content:"";position:absolute;left:4px;top:18px;bottom:22px;width:2px;background:linear-gradient(var(--navy),var(--steel))}
+.pc-cascade li{position:relative;padding:8px 0 8px 26px;display:grid;gap:2px}
+.pc-cascade li::before{content:"";position:absolute;left:0;top:14px;width:10px;height:10px;border-radius:50%;background:var(--navy);box-shadow:0 0 0 4px #fff}
+.pc-cascade b{font-family:var(--display);font-size:18px;color:var(--navy);font-weight:600}
+.pc-cascade span{font-size:15px;color:#4A5059}
 </style>
 </head>
 <body>
@@ -416,12 +424,22 @@ footer a{color:#C9D4E0}
       </figure>
       <div class="plancard" aria-label="The Te Ahu Solutions Action Plan">
         <div class="pc-head"><span>Te Ahu Solutions Action Plan</span><span class="pc-dot" aria-hidden="true"></span></div>
-        <div class="pc-mirror"><b>The Mirror</b><p>An honest reflection of where your organisation or kaupapa stands, at a strategic level.</p></div>
+        <div class="pc-mirror"><b>The Mirror</b><p>An honest reflection of where your organisation or kaupapa stands, and how ready it is at every level.</p></div>
+        <div class="pc-cascade" aria-label="Levels of the plan">
+          <p class="pc-sub">One plan, carried at every level</p>
+          <ol>
+            <li><b>Governance</b><span>Sets the direction and holds the organisation to account</span></li>
+            <li><b>Strategic</b><span>Turns direction into clear priorities</span></li>
+            <li><b>Operational</b><span>Builds the change into how the work is done</span></li>
+            <li><b>Project</b><span>Delivers the change on the ground</span></li>
+          </ol>
+        </div>
+        <p class="pc-sub">Each level receives</p>
         <div class="pc-grid">
-          <div><span class="n">1</span><span class="t"><b>Priority</b><p>The one thing your organisation should focus on now.</p></span></div>
-          <div><span class="n">1</span><span class="t"><b>Behavioural Shift</b><p>The change in how your people lead and work that will make the biggest difference.</p></span></div>
-          <div><span class="n">3</span><span class="t"><b>Actions</b><p>Practical, strategic steps, in the order they matter.</p></span></div>
-          <div><span class="n">1</span><span class="t"><b>Accountability</b><p>Who owns progress, and how you'll check in on it.</p></span></div>
+          <div><span class="n">1</span><span class="t"><b>Priority</b><p>The one thing that level should focus on now.</p></span></div>
+          <div><span class="n">1</span><span class="t"><b>Behavioural Shift</b><p>The change in how people at that level lead and work.</p></span></div>
+          <div><span class="n">3</span><span class="t"><b>Actions</b><p>Practical steps, in the order they matter.</p></span></div>
+          <div><span class="n">1</span><span class="t"><b>Accountability</b><p>One owner for that level, and how you'll check in.</p></span></div>
         </div>
       </div>
     </div>
