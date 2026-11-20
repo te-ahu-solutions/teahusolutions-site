@@ -284,6 +284,16 @@ footer a{color:#C9D4E0}
 .v-side figure:first-child{padding-top:0;border-top:0}
 .v-side blockquote{font-size:19px;line-height:1.5}
 @media (max-width:860px){.v-grid{grid-template-columns:1fr;gap:36px}.v-side figure:first-child{padding-top:22px;border-top:1px solid rgba(185,200,216,.28)}}
+.levels{margin:56px 0 8px}
+.lv-head{max-width:720px}
+.lv-head h3{font-family:var(--display);font-size:clamp(24px,2.6vw,30px);color:var(--navy);margin:0}
+.lv-head p{margin:10px 0 0;color:#4A5059}
+.lv-grid{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px}
+.lv-grid li{border-top:2px solid var(--navy);padding-top:16px}
+.lv-grid b{display:block;font-family:var(--display);font-size:20px;font-weight:600;color:var(--navy)}
+.lv-grid p{margin:8px 0 0;font-size:15px;line-height:1.6;color:#4A5059}
+@media (max-width:900px){.lv-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.lv-grid{grid-template-columns:1fr;gap:22px}}
 </style>
 </head>
 <body>
@@ -348,6 +358,11 @@ footer a{color:#C9D4E0}
         <article class="tile"><span class="eyebrow">For teams</span><h3>Building capability and capacity</h3><p>Facilitation, coaching, wānanga and workshops so your teams can thrive.</p></article>
       </div>
       <p class="also2"><b>Iwi, agencies and larger organisations</b><span>Scoped projects only, by conversation.</span></p>
+
+      <div class="levels">
+        <div class="lv-head"><h3>From the boardroom to the project</h3><p>We work at every level of an organisation, and we're clear about which level your kaupapa needs. Where a community isn't ready yet, we can hold the work for a time, then hand it back.</p></div>
+        <ol class="lv-grid"><li><b>Governance</b><p>Board and trustee capability, governance structures and charters, policy frameworks, board–management relationships.</p></li><li><b>Strategic</b><p>Long-term strategic plans, up to 100 years. Organisational design, investment and development strategy.</p></li><li><b>Operational</b><p>Operating models, systems, processes and structures, compliance readiness, management capability, property and asset management.</p></li><li><b>Project</b><p>Project scoping, business cases, planning and delivery, whenua development, social enterprise set-up.</p></li></ol>
+      </div>
 
       <div class="pair">
         <div class="panel dark">
