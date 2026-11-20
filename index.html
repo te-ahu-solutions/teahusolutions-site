@@ -328,6 +328,13 @@ footer a{color:#C9D4E0}
 .fb-item h3{font-family:var(--display);font-size:clamp(18px,2vw,20px);color:var(--navy);margin:0 0 8px}
 .fb-item p{margin:0;max-width:66ch}
 @media (max-width:760px){.pair.solo .panel{grid-template-columns:1fr}.pair.solo .panel > .block{grid-column:1;grid-row:auto}.faq-box summary{padding:22px 56px 22px 20px}.fb-body{padding:0 20px 8px}}
+@media (min-width:861px){
+.contact .wrap{column-gap:56px;row-gap:0;align-items:stretch}
+.contact .wrap > div:first-child{display:contents}
+.contact .wrap > div:first-child > *{grid-column:1}
+.contact .wrap > div:first-child > .panel.start{grid-row:4}
+.contact .cform{grid-column:2;grid-row:4;margin-top:32px;align-self:start}
+}
 </style>
 </head>
 <body>
